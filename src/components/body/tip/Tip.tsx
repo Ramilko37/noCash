@@ -1,9 +1,14 @@
 import React from "react";
 import TipButton from "./tip-button/TipButton";
 import TipInput from "./tip-input/TipInput";
-import Rate from "../rate/Rate";
+import Rate from "../review/rate/Rate";
+import NoCashCheckoutForm from "../pay/checkout/NoCashCheckoutForm";
+import {Elements} from "@stripe/react-stripe-js";
+import {loadStripe} from "@stripe/stripe-js";
 
 const amountList = [5, 10, 15, 20]
+
+const stripePromise = loadStripe('pk_test_51IxSuWLkp54pVwNHVSlpuWCEyw2aQa8beEYD1DKb351afWkTHdf9NPUnFxALJNXaNy6drLvBRJFRBc6PGGw5Q7SR00qpa6RPR2');
 
 const Tip: React.FC<{}> = () => {
     let [amount, setAmount] = React.useState(5)
@@ -18,11 +23,14 @@ const Tip: React.FC<{}> = () => {
         ">
             <div className="m-20 max-w-lg flex flex-col justify-center">
                 <TipInput handleAmount={handleAmount} amount={amount}/>
-               <div className="flex justify-between mt-4">
-                   {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
-               </div>
+                <div className="flex justify-between mt-4">
+                    {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
+                </div>
             </div>
-        <Rate/>
+            <Rate/>
+            <Elements stripe={stripePromise}>
+                <NoCashCheckoutForm/>
+            </Elements>
         </div>
     )
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import Customer from "./customer/Customer";
 import Tip from "./tip/Tip";
-import Rate from "./rate/Rate";
 
 const Body: React.FC = () =>
 
