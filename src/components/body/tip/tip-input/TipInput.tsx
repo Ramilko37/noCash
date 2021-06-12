@@ -6,10 +6,10 @@ interface IProps {
 }
 
 const TipInput: React.FC<IProps> = ({amount, handleAmount}) =>
-    <div>
+    <div className="flex justify-center">
         <input  id="amount" value={amount}
                 onChange={() => handleAmount(amount)}
-               className="w-32 p-3"/>
+               className="text-center w-32 p-3 bg-transparent border-b-2 text-white font-bold"/>
     </div>
 
 export default TipInput

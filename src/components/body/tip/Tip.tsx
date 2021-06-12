@@ -15,8 +15,14 @@ const Tip: React.FC<{}> = () => {
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
         ">
-            {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
-            <TipInput handleAmount={handleAmount} amount={amount}/>
+            <div className="m-20 max-w-lg">
+                <TipInput handleAmount={handleAmount} amount={amount}/>
+               <div className="flex justify-between mt-4">
+                   {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
+
+               </div>
+            </div>
+
         </div>
     )
 }
