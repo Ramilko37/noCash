@@ -1,8 +1,14 @@
 import React from "react";
 
-const TipInput: React.FC<{amount:number}> = ({amount}) =>
+interface IProps {
+    amount: number,
+    handleAmount: (amount: number) => void
+}
+
+const TipInput: React.FC<IProps> = ({amount, handleAmount}) =>
     <div>
         <input  id="amount" value={amount}
+                onChange={() => handleAmount(amount)}
                className="w-32 p-3"/>
     </div>
 
