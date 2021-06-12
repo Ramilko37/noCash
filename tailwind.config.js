@@ -5,7 +5,10 @@ module.exports = {
     extend: {
       colors: {
         'button-color': 'linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)',
-      }
+      },
+      fontFamily: {
+        'Inter': ['Inter']
+      },
     },
     container: {
       center: true
