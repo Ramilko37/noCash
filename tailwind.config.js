@@ -4,10 +4,11 @@ module.exports = {
   theme: {
     extend: {},
     container: {
-      center: true,
+      center: true
     },
     borderRadius: {
       'large': '25px',
+      'full': '9999px',
     }
   },
   variants: {
