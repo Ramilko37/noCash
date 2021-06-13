@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         'Inter': ['Inter']
       },
+      backgroundImage: theme => ({
+        'star-button': "url('./img/svg/star.svg')",
+      })
     },
     container: {
       center: true
