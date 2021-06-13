@@ -8,6 +8,9 @@ const Rate: React.FC = () =>
         <div className="flex justify-center space-x-4">
             <Star/>
             <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
         </div>
     </div>
 

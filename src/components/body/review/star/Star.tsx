@@ -2,7 +2,7 @@ import * as React from "react"
 
 function Star(props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
     return (
-        <button className="bg-none w-5 h-5 bg-gray-700 border-bu    ">
+        <button className="bg-none w-5 h-5 bg-gray-700">
             <svg
                 width={42}
                 height={40}
