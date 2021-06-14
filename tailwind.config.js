@@ -5,13 +5,11 @@ module.exports = {
     extend: {
       colors: {
         'button-color': 'linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)',
+        'textarea-bg': '#313D4D',
       },
       fontFamily: {
-        'Inter': ['Inter']
+        'sans': 'Helvetica, Arial, Inter, sans-serif',
       },
-      backgroundImage: theme => ({
-        'star-button': "url('./img/svg/star.svg')",
-      })
     },
     container: {
       center: true
@@ -25,5 +23,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }

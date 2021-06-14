@@ -1,7 +1,8 @@
 import * as React from "react"
 
-function Graystar(props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>) {
+function Graystar(props: any) {
     return (
+        <button className="bg-none w-5 h-5 bg-gray-700">
         <svg
             width={42}
             height={40}
@@ -15,6 +16,7 @@ function Graystar(props: JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
                 fill="#313D4D"
             />
         </svg>
+        </button>
     )
 }
 
