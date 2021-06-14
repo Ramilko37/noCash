@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {
-    CardElement,
     useStripe,
-    useElements
+    useElements, CardNumberElement, CardExpiryElement, CardCvcElement
 } from "@stripe/react-stripe-js";
 import './NoCashCheckoutForm.css';
 import {ConfirmCardPaymentData} from "@stripe/stripe-js";
@@ -16,6 +15,7 @@ export default function NoCashCheckoutForm() {
     const [clientSecret, setClientSecret] = useState('');
     const stripe = useStripe();
     const elements = useElements();
+
     useEffect(() => {
         axios
             .post("http://localhost:8083/payment", {
@@ -29,24 +29,8 @@ export default function NoCashCheckoutForm() {
                 console.log("Payment failed: ", error);
             });
     }, []);
-    const cardStyle = {
-        hidePostalCode: true,
-        style: {
-            base: {
-                color: "#32325d",
-                fontFamily: 'Arial, sans-serif',
-                fontSmoothing: "antialiased",
-                fontSize: "16px",
-                "::placeholder": {
-                    color: "#32325d"
-                }
-            },
-            invalid: {
-                color: "#fa755a",
-                iconColor: "#fa755a"
-            }
-        }
-    };
+
+
     const handleChange = async (event: any) => {
         // Listen for changes in the CardElement
         // and display any errors as the customer types their card details
@@ -58,7 +42,7 @@ export default function NoCashCheckoutForm() {
         setProcessing(true);
         const payload = await stripe?.confirmCardPayment(clientSecret, {
             payment_method: {
-                card: elements?.getElement(CardElement)
+                card: elements?.getElement(CardNumberElement)
             }
         } as ConfirmCardPaymentData);
         if (payload?.error) {
@@ -70,22 +54,47 @@ export default function NoCashCheckoutForm() {
             setSucceeded(true);
         }
     };
+    const style = {
+        base:
+            {
+                color: 'white',
+                fontSize: '16px'
+            }
+    }
     return (
-        <form id="payment-form" onSubmit={handleSubmit}>
-            <CardElement id="card-element" options={cardStyle} onChange={handleChange}/>
+        <form id="payment-form" onSubmit={handleSubmit}
+              className="flex flex-col items-start space-y-6 text-gray-300">
+            <div className="w-full">
+                <label>
+                    Card Number:
+                    <CardNumberElement id="card-number" options={{style}} onChange={handleChange}/>
+                </label>
+
+            </div>
+            <div className="flex space-x-12 w-full">
+                <label>
+                    Expiry Date:
+                    <CardExpiryElement options={{style}} id="card-expiry"/>
+                </label>
+                <label>
+                    CVC:
+                    <CardCvcElement options={{style}} id="card-cvc"/>
+                </label>
+            </div>
+
+
             <button
                 disabled={processing || disabled || succeeded}
                 id="submit"
             >
-        <span id="button-text">
-          {processing ? (
-              <div className="spinner" id="spinner"/>
-          ) : (
-              "Pay now"
-          )}
-        </span>
+            <span id="button-text">
+              {processing ? (
+                  <div className="spinner" id="spinner"/>
+              ) : (
+                  "To pay"
+              )}
+            </span>
             </button>
-            {/* Show any error that happens when processing the payment */}
             {error && (
                 <div className="card-error" role="alert">
                     {error}
@@ -102,5 +111,6 @@ export default function NoCashCheckoutForm() {
                 </a> Refresh the page to pay again.
             </p>
         </form>
+
     );
 }

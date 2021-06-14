@@ -17,47 +17,74 @@ const stripePromise = loadStripe('pk_test_51IxSuWLkp54pVwNHVSlpuWCEyw2aQa8beEYD1
 
 const Tip: React.FC<{}> = () => {
     let [amount, setAmount] = React.useState(5)
+    let [step, setStep] = React.useState(0)
     const handleAmount = (a: number) => {
         setAmount(a)
     }
+
     return (
-        <div className="
+        step === 0
+
+            ?
+
+            <div className="
         lg:h-full lg:w-3/4
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
         mt-4
         ">
-            <div className="m-20 mt-2 mb-6 max-w-lg flex flex-col justify-center mx-auto">
-                <TipInput handleAmount={handleAmount} amount={amount}/>
-                <div className="flex justify-between mt-4">
-                    {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
+                <div className="m-20 mt-2 mb-6 max-w-lg flex flex-col justify-center mx-auto">
+                    <TipInput handleAmount={handleAmount} amount={amount}/>
+                    <div className="flex justify-between mt-4">
+                        {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
+                    </div>
+                </div>
+                <Rate/>
+                <div className="flex-col justify-center mx-auto text-white">
+                    <h3 className="text-center mb-6">What can we do better?</h3>
+                    <Radiobuttons/>
+                </div>
+                <Input/>
+                <div className="flex justify-center space-x-1 max-w-[400px] mx-auto">
+                    <div className="flex items-center mr-4 mb-4 text-white flex-wrap mt-4">
+                        <input id="radio7" type="checkbox" name="radio" className="hidden"/>
+                        <label htmlFor="radio7" className="flex items-center cursor-pointer">
+                            <RadioButton id={'radio7'}
+                                         content={'I want to cover transaction costs (5% от суммы \n' +
+                                         'чаевых €) so that the employee receives the full amount'}/>
+                        </label>
+                    </div>
+
+                </div>
+                <div className="flex justify-center">
+                    <ApplePayButton/>
+                    <CardPayButton handleStep={() => setStep(1)}/>
+                </div>
+
+            </div>
+
+            :
+
+            <div className="
+        lg:h-full lg:w-3/4
+        md:h-3/4 md:w-full
+        sm:h-3/4 sm:w-full
+        mt-4
+        ">
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div className="flex justify-center space-x-4">
+                    <div className="flex justify-center">
+                        <Elements stripe={stripePromise}>
+                            <NoCashCheckoutForm/>
+                        </Elements>
+                    </div>
                 </div>
             </div>
-            <Rate/>
-            {/*<Elements stripe={stripePromise}>*/}
-            {/*    <NoCashCheckoutForm/>*/}
-            {/*</Elements>*/}
-
-            <div className="flex-col justify-center mx-auto text-white">
-                <h3 className="text-center mb-6">What can we do better?</h3>
-                <Radiobuttons/>
-            </div>
-            <Input/>
-            <div className="flex justify-center space-x-1 max-w-[400px] mx-auto">
-                <div className="flex items-center mr-4 mb-4 text-white flex-wrap mt-4">
-                    <input id="radio7" type="checkbox" name="radio" className="hidden"/>
-                    <label htmlFor="radio7" className="flex items-center cursor-pointer">
-                        <RadioButton id={'radio7'} content={'I want to cover transaction costs (5% от суммы \n' +
-                        'чаевых €) so that the employee receives the full amount'}/>
-                    </label>
-                </div>
-            </div>
-            <div className="flex justify-center space-x-4">
-                <ApplePayButton/>
-                <CardPayButton/>
-            </div>
-
-        </div>
     )
 }
 
