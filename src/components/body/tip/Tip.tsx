@@ -9,6 +9,7 @@ import Radiobuttons from "../review/radiobuttons/Radiobuttons";
 import Input from "../review/input/Input";
 import RadioButton from "../review/radiobuttons/RadioButton";
 import ApplePayButton from "../pay/ApplePayButton";
+import CardPayButton from "../pay/CardPayButton";
 
 const amountList = [5, 10, 15, 20]
 
@@ -25,7 +26,7 @@ const Tip: React.FC<{}> = () => {
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
         ">
-            <div className="m-20 max-w-lg flex flex-col justify-center mx-auto">
+            <div className="m-20 mt-8 max-w-lg flex flex-col justify-center mx-auto">
                 <TipInput handleAmount={handleAmount} amount={amount}/>
                 <div className="flex justify-between mt-4">
                     {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
@@ -49,9 +50,9 @@ const Tip: React.FC<{}> = () => {
                     </label>
                 </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center space-x-4">
                 <ApplePayButton/>
-
+                <CardPayButton/>
             </div>
 
         </div>
