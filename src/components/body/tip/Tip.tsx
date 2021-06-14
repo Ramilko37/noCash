@@ -25,17 +25,19 @@ const Tip: React.FC<{}> = () => {
         lg:h-full lg:w-3/4
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
+        mt-4
         ">
-            <div className="m-20 mt-8 max-w-lg flex flex-col justify-center mx-auto">
+            <div className="m-20 mt-2 mb-6 max-w-lg flex flex-col justify-center mx-auto">
                 <TipInput handleAmount={handleAmount} amount={amount}/>
                 <div className="flex justify-between mt-4">
                     {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
                 </div>
             </div>
-            {/*<Rate/>*/}
+            <Rate/>
             {/*<Elements stripe={stripePromise}>*/}
             {/*    <NoCashCheckoutForm/>*/}
             {/*</Elements>*/}
+
             <div className="flex-col justify-center mx-auto text-white">
                 <h3 className="text-center mb-6">What can we do better?</h3>
                 <Radiobuttons/>
