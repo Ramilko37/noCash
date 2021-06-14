@@ -1,12 +1,10 @@
 import React from "react";
 
-
 const Input: React.FC = () =>
-    <div className="flex-col justify-center max-w-lg mb-1 text-xs space-y-2 mx-auto">
+    <div className="flex-col justify-center max-w-lg mb-1 text-xs space-y-2 mx-auto mb-4">
         <textarea name="message" id=""
     className="w-full min-h-[100px] max-h-[300px] h-28 block w-full bg-textarea-bg text-gray-500 color-grey-darker border border-grey-lighter py-4 px-4 outline-none resize-none rounded-md"
     placeholder="Tell us more… (not necessary)" spellCheck="false"/>
     </div>
-
 
 export default Input;

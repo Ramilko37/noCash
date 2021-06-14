@@ -7,6 +7,8 @@ import {Elements} from "@stripe/react-stripe-js";
 import {loadStripe} from "@stripe/stripe-js";
 import Radiobuttons from "../review/radiobuttons/Radiobuttons";
 import Input from "../review/input/Input";
+import RadioButton from "../review/radiobuttons/RadioButton";
+import ApplePayButton from "../pay/ApplePayButton";
 
 const amountList = [5, 10, 15, 20]
 
@@ -33,17 +35,25 @@ const Tip: React.FC<{}> = () => {
             {/*<Elements stripe={stripePromise}>*/}
             {/*    <NoCashCheckoutForm/>*/}
             {/*</Elements>*/}
-            <Radiobuttons/>
+            <div className="flex-col justify-center mx-auto text-white">
+                <h3 className="text-center mb-6">What can we do better?</h3>
+                <Radiobuttons/>
+            </div>
             <Input/>
             <div className="flex justify-center space-x-1 max-w-[400px] mx-auto">
                 <div className="flex items-center mr-4 mb-4 text-white flex-wrap mt-4">
                     <input id="radio7" type="checkbox" name="radio" className="hidden"/>
                     <label htmlFor="radio7" className="flex items-center cursor-pointer">
-                        <span className="w-4 h-4 inline-block mr-1 rounded-full border border-grey flex-wrap"></span>
-                        I want to cover transaction costs (5% от суммы
-                        чаевых €) so that the employee receives the full amount</label>
+                        <RadioButton id={'radio7'} content={'I want to cover transaction costs (5% от суммы \n' +
+                        'чаевых €) so that the employee receives the full amount'}/>
+                    </label>
                 </div>
             </div>
+            <div className="flex justify-center">
+                <ApplePayButton/>
+
+            </div>
+
         </div>
     )
 }
