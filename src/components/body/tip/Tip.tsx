@@ -41,29 +41,25 @@ const Tip: React.FC<{}> = () => {
                 </div>
                 <Rate/>
                 <div className="flex-col justify-center mx-auto text-white">
-                    <h3 className="text-center mb-2">What can we do better?</h3>
+                    <h3 className="text-center mb-6">What can we do better?</h3>
                     <Radiobuttons/>
                 </div>
                 <Input/>
                 <div className="flex justify-center space-x-1 max-w-[400px] mx-auto">
-                    <div className="flex items-center mr-4 text-white flex-wrap">
+                    <div className="flex items-center mr-4 mb-4 text-white flex-wrap mt-4">
                         <input id="radio7" type="checkbox" name="radio" className="hidden"/>
                         <label htmlFor="radio7" className="flex items-center cursor-pointer">
                             <RadioButton id={'radio7'}
-                                         content={''}/>
-                            <p className="max-w-lg text-white text-xs">I want to cover transaction costs (5% от суммы чаевых €) so that the employee receives the full amount</p>
+                                         content={'I want to cover transaction costs (5% от суммы \n' +
+                                         'чаевых €) so that the employee receives the full amount'}/>
                         </label>
                     </div>
 
                 </div>
-                <div className="flex justify-center flex-wrap">
-                    <ApplePayButton />
+                <div className="flex justify-center">
+                    <ApplePayButton/>
                     <CardPayButton handleStep={() => setStep(1)}/>
                 </div>
-
-                    <p className="max-w-lg text-center text-xs text-white mx-auto mt-4 mb-12">By making a payment, you agree to the terms of the NoCash service</p>
-
-
 
             </div>
 
