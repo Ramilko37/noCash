@@ -2106,7 +2106,7 @@ select {
   border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
 }
 
-.divide-applePayButton > :not([hidden]) ~ :not([hidden]) {
+.divide-payButton > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgba(37, 37, 39, var(--tw-divide-opacity));
 }
@@ -2722,7 +2722,7 @@ select {
   background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
-.bg-applePayButton {
+.bg-payButton {
   --tw-bg-opacity: 1;
   background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
 }
@@ -3154,7 +3154,7 @@ select {
   background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
-.group:hover .group-hover\:bg-applePayButton {
+.group:hover .group-hover\:bg-payButton {
   --tw-bg-opacity: 1;
   background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
 }
@@ -3586,7 +3586,7 @@ select {
   background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
-.focus-within\:bg-applePayButton:focus-within {
+.focus-within\:bg-payButton:focus-within {
   --tw-bg-opacity: 1;
   background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
 }
@@ -4018,7 +4018,7 @@ select {
   background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
-.hover\:bg-applePayButton:hover {
+.hover\:bg-payButton:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
 }
@@ -4450,7 +4450,7 @@ select {
   background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
-.focus\:bg-applePayButton:focus {
+.focus\:bg-payButton:focus {
   --tw-bg-opacity: 1;
   background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
 }
@@ -4921,7 +4921,7 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
-.from-applePayButton {
+.from-payButton {
   --tw-gradient-from: #252527;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
 }
@@ -5270,7 +5270,7 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
-.via-applePayButton {
+.via-payButton {
   --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
 }
 
@@ -5618,7 +5618,7 @@ select {
   --tw-gradient-to: #313D4D;
 }
 
-.to-applePayButton {
+.to-payButton {
   --tw-gradient-to: #252527;
 }
 
@@ -6052,7 +6052,7 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
-.hover\:from-applePayButton:hover {
+.hover\:from-payButton:hover {
   --tw-gradient-from: #252527;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
 }
@@ -6401,7 +6401,7 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
-.hover\:via-applePayButton:hover {
+.hover\:via-payButton:hover {
   --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
 }
 
@@ -6749,7 +6749,7 @@ select {
   --tw-gradient-to: #313D4D;
 }
 
-.hover\:to-applePayButton:hover {
+.hover\:to-payButton:hover {
   --tw-gradient-to: #252527;
 }
 
@@ -7183,7 +7183,7 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
-.focus\:from-applePayButton:focus {
+.focus\:from-payButton:focus {
   --tw-gradient-from: #252527;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
 }
@@ -7532,7 +7532,7 @@ select {
   --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
-.focus\:via-applePayButton:focus {
+.focus\:via-payButton:focus {
   --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
 }
 
@@ -7880,7 +7880,7 @@ select {
   --tw-gradient-to: #313D4D;
 }
 
-.focus\:to-applePayButton:focus {
+.focus\:to-payButton:focus {
   --tw-gradient-to: #252527;
 }
 
@@ -8691,7 +8691,7 @@ select {
   border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
-.border-applePayButton {
+.border-payButton {
   --tw-border-opacity: 1;
   border-color: rgba(37, 37, 39, var(--tw-border-opacity));
 }
@@ -9123,7 +9123,7 @@ select {
   border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
-.group:hover .group-hover\:border-applePayButton {
+.group:hover .group-hover\:border-payButton {
   --tw-border-opacity: 1;
   border-color: rgba(37, 37, 39, var(--tw-border-opacity));
 }
@@ -9555,7 +9555,7 @@ select {
   border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
-.focus-within\:border-applePayButton:focus-within {
+.focus-within\:border-payButton:focus-within {
   --tw-border-opacity: 1;
   border-color: rgba(37, 37, 39, var(--tw-border-opacity));
 }
@@ -9987,7 +9987,7 @@ select {
   border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
-.hover\:border-applePayButton:hover {
+.hover\:border-payButton:hover {
   --tw-border-opacity: 1;
   border-color: rgba(37, 37, 39, var(--tw-border-opacity));
 }
@@ -10419,7 +10419,7 @@ select {
   border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
-.focus\:border-applePayButton:focus {
+.focus\:border-payButton:focus {
   --tw-border-opacity: 1;
   border-color: rgba(37, 37, 39, var(--tw-border-opacity));
 }
@@ -17016,17 +17016,17 @@ select {
   color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
 }
 
-.placeholder-applePayButton::-webkit-input-placeholder {
+.placeholder-payButton::-webkit-input-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
 }
 
-.placeholder-applePayButton:-ms-input-placeholder {
+.placeholder-payButton:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
 }
 
-.placeholder-applePayButton::placeholder {
+.placeholder-payButton::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
 }
@@ -18312,17 +18312,17 @@ select {
   color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
 }
 
-.focus\:placeholder-applePayButton:focus::-webkit-input-placeholder {
+.focus\:placeholder-payButton:focus::-webkit-input-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
 }
 
-.focus\:placeholder-applePayButton:focus:-ms-input-placeholder {
+.focus\:placeholder-payButton:focus:-ms-input-placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
 }
 
-.focus\:placeholder-applePayButton:focus::placeholder {
+.focus\:placeholder-payButton:focus::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
 }
@@ -22214,7 +22214,7 @@ select {
   --tw-ring-offset-color: #313D4D;
 }
 
-.ring-offset-applePayButton {
+.ring-offset-payButton {
   --tw-ring-offset-color: #252527;
 }
 
@@ -22562,7 +22562,7 @@ select {
   --tw-ring-offset-color: #313D4D;
 }
 
-.focus-within\:ring-offset-applePayButton:focus-within {
+.focus-within\:ring-offset-payButton:focus-within {
   --tw-ring-offset-color: #252527;
 }
 
@@ -22910,7 +22910,7 @@ select {
   --tw-ring-offset-color: #313D4D;
 }
 
-.focus\:ring-offset-applePayButton:focus {
+.focus\:ring-offset-payButton:focus {
   --tw-ring-offset-color: #252527;
 }
 
@@ -23401,7 +23401,7 @@ select {
   --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
 }
 
-.ring-applePayButton {
+.ring-payButton {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
 }
@@ -23833,7 +23833,7 @@ select {
   --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
 }
 
-.focus-within\:ring-applePayButton:focus-within {
+.focus-within\:ring-payButton:focus-within {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
 }
@@ -24265,7 +24265,7 @@ select {
   --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
 }
 
-.focus\:ring-applePayButton:focus {
+.focus\:ring-payButton:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
 }
@@ -24921,7 +24921,7 @@ select {
   color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
-.text-applePayButton {
+.text-payButton {
   --tw-text-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-text-opacity));
 }
@@ -25353,7 +25353,7 @@ select {
   color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:text-applePayButton {
+.group:hover .group-hover\:text-payButton {
   --tw-text-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-text-opacity));
 }
@@ -25785,7 +25785,7 @@ select {
   color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
-.focus-within\:text-applePayButton:focus-within {
+.focus-within\:text-payButton:focus-within {
   --tw-text-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-text-opacity));
 }
@@ -26217,7 +26217,7 @@ select {
   color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
-.hover\:text-applePayButton:hover {
+.hover\:text-payButton:hover {
   --tw-text-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-text-opacity));
 }
@@ -26649,7 +26649,7 @@ select {
   color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
-.focus\:text-applePayButton:focus {
+.focus\:text-payButton:focus {
   --tw-text-opacity: 1;
   color: rgba(37, 37, 39, var(--tw-text-opacity));
 }
@@ -32178,6 +32178,10 @@ select {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+.border-bottom-color {
+  border-bottom-color: white;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -33558,7 +33562,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
-  .sm\:divide-applePayButton > :not([hidden]) ~ :not([hidden]) {
+  .sm\:divide-payButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-divide-opacity));
   }
@@ -34174,7 +34178,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .sm\:bg-applePayButton {
+  .sm\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -34606,7 +34610,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .group:hover .sm\:group-hover\:bg-applePayButton {
+  .group:hover .sm\:group-hover\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -35038,7 +35042,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .sm\:focus-within\:bg-applePayButton:focus-within {
+  .sm\:focus-within\:bg-payButton:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -35470,7 +35474,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .sm\:hover\:bg-applePayButton:hover {
+  .sm\:hover\:bg-payButton:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -35902,7 +35906,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .sm\:focus\:bg-applePayButton:focus {
+  .sm\:focus\:bg-payButton:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -36373,7 +36377,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .sm\:from-applePayButton {
+  .sm\:from-payButton {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -36722,7 +36726,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .sm\:via-applePayButton {
+  .sm\:via-payButton {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -37070,7 +37074,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .sm\:to-applePayButton {
+  .sm\:to-payButton {
     --tw-gradient-to: #252527;
   }
 
@@ -37504,7 +37508,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .sm\:hover\:from-applePayButton:hover {
+  .sm\:hover\:from-payButton:hover {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -37853,7 +37857,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .sm\:hover\:via-applePayButton:hover {
+  .sm\:hover\:via-payButton:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -38201,7 +38205,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .sm\:hover\:to-applePayButton:hover {
+  .sm\:hover\:to-payButton:hover {
     --tw-gradient-to: #252527;
   }
 
@@ -38635,7 +38639,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .sm\:focus\:from-applePayButton:focus {
+  .sm\:focus\:from-payButton:focus {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -38984,7 +38988,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .sm\:focus\:via-applePayButton:focus {
+  .sm\:focus\:via-payButton:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -39332,7 +39336,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .sm\:focus\:to-applePayButton:focus {
+  .sm\:focus\:to-payButton:focus {
     --tw-gradient-to: #252527;
   }
 
@@ -40143,7 +40147,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .sm\:border-applePayButton {
+  .sm\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -40575,7 +40579,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .group:hover .sm\:group-hover\:border-applePayButton {
+  .group:hover .sm\:group-hover\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -41007,7 +41011,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .sm\:focus-within\:border-applePayButton:focus-within {
+  .sm\:focus-within\:border-payButton:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -41439,7 +41443,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .sm\:hover\:border-applePayButton:hover {
+  .sm\:hover\:border-payButton:hover {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -41871,7 +41875,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .sm\:focus\:border-applePayButton:focus {
+  .sm\:focus\:border-payButton:focus {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -48468,17 +48472,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .sm\:placeholder-applePayButton::-webkit-input-placeholder {
+  .sm\:placeholder-payButton::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .sm\:placeholder-applePayButton:-ms-input-placeholder {
+  .sm\:placeholder-payButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .sm\:placeholder-applePayButton::placeholder {
+  .sm\:placeholder-payButton::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -49764,17 +49768,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .sm\:focus\:placeholder-applePayButton:focus::-webkit-input-placeholder {
+  .sm\:focus\:placeholder-payButton:focus::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .sm\:focus\:placeholder-applePayButton:focus:-ms-input-placeholder {
+  .sm\:focus\:placeholder-payButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .sm\:focus\:placeholder-applePayButton:focus::placeholder {
+  .sm\:focus\:placeholder-payButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -53653,7 +53657,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .sm\:ring-offset-applePayButton {
+  .sm\:ring-offset-payButton {
     --tw-ring-offset-color: #252527;
   }
 
@@ -54001,7 +54005,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .sm\:focus-within\:ring-offset-applePayButton:focus-within {
+  .sm\:focus-within\:ring-offset-payButton:focus-within {
     --tw-ring-offset-color: #252527;
   }
 
@@ -54349,7 +54353,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .sm\:focus\:ring-offset-applePayButton:focus {
+  .sm\:focus\:ring-offset-payButton:focus {
     --tw-ring-offset-color: #252527;
   }
 
@@ -54840,7 +54844,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .sm\:ring-applePayButton {
+  .sm\:ring-payButton {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -55272,7 +55276,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .sm\:focus-within\:ring-applePayButton:focus-within {
+  .sm\:focus-within\:ring-payButton:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -55704,7 +55708,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .sm\:focus\:ring-applePayButton:focus {
+  .sm\:focus\:ring-payButton:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -56360,7 +56364,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .sm\:text-applePayButton {
+  .sm\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -56792,7 +56796,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .group:hover .sm\:group-hover\:text-applePayButton {
+  .group:hover .sm\:group-hover\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -57224,7 +57228,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .sm\:focus-within\:text-applePayButton:focus-within {
+  .sm\:focus-within\:text-payButton:focus-within {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -57656,7 +57660,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .sm\:hover\:text-applePayButton:hover {
+  .sm\:hover\:text-payButton:hover {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -58088,7 +58092,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .sm\:focus\:text-applePayButton:focus {
+  .sm\:focus\:text-payButton:focus {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -64875,7 +64879,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
-  .md\:divide-applePayButton > :not([hidden]) ~ :not([hidden]) {
+  .md\:divide-payButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-divide-opacity));
   }
@@ -65491,7 +65495,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .md\:bg-applePayButton {
+  .md\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -65923,7 +65927,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .group:hover .md\:group-hover\:bg-applePayButton {
+  .group:hover .md\:group-hover\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -66355,7 +66359,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .md\:focus-within\:bg-applePayButton:focus-within {
+  .md\:focus-within\:bg-payButton:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -66787,7 +66791,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .md\:hover\:bg-applePayButton:hover {
+  .md\:hover\:bg-payButton:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -67219,7 +67223,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .md\:focus\:bg-applePayButton:focus {
+  .md\:focus\:bg-payButton:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -67690,7 +67694,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .md\:from-applePayButton {
+  .md\:from-payButton {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -68039,7 +68043,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .md\:via-applePayButton {
+  .md\:via-payButton {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -68387,7 +68391,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .md\:to-applePayButton {
+  .md\:to-payButton {
     --tw-gradient-to: #252527;
   }
 
@@ -68821,7 +68825,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .md\:hover\:from-applePayButton:hover {
+  .md\:hover\:from-payButton:hover {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -69170,7 +69174,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .md\:hover\:via-applePayButton:hover {
+  .md\:hover\:via-payButton:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -69518,7 +69522,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .md\:hover\:to-applePayButton:hover {
+  .md\:hover\:to-payButton:hover {
     --tw-gradient-to: #252527;
   }
 
@@ -69952,7 +69956,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .md\:focus\:from-applePayButton:focus {
+  .md\:focus\:from-payButton:focus {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -70301,7 +70305,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .md\:focus\:via-applePayButton:focus {
+  .md\:focus\:via-payButton:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -70649,7 +70653,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .md\:focus\:to-applePayButton:focus {
+  .md\:focus\:to-payButton:focus {
     --tw-gradient-to: #252527;
   }
 
@@ -71460,7 +71464,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .md\:border-applePayButton {
+  .md\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -71892,7 +71896,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .group:hover .md\:group-hover\:border-applePayButton {
+  .group:hover .md\:group-hover\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -72324,7 +72328,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .md\:focus-within\:border-applePayButton:focus-within {
+  .md\:focus-within\:border-payButton:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -72756,7 +72760,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .md\:hover\:border-applePayButton:hover {
+  .md\:hover\:border-payButton:hover {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -73188,7 +73192,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .md\:focus\:border-applePayButton:focus {
+  .md\:focus\:border-payButton:focus {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -79785,17 +79789,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .md\:placeholder-applePayButton::-webkit-input-placeholder {
+  .md\:placeholder-payButton::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .md\:placeholder-applePayButton:-ms-input-placeholder {
+  .md\:placeholder-payButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .md\:placeholder-applePayButton::placeholder {
+  .md\:placeholder-payButton::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -81081,17 +81085,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .md\:focus\:placeholder-applePayButton:focus::-webkit-input-placeholder {
+  .md\:focus\:placeholder-payButton:focus::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .md\:focus\:placeholder-applePayButton:focus:-ms-input-placeholder {
+  .md\:focus\:placeholder-payButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .md\:focus\:placeholder-applePayButton:focus::placeholder {
+  .md\:focus\:placeholder-payButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -84970,7 +84974,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .md\:ring-offset-applePayButton {
+  .md\:ring-offset-payButton {
     --tw-ring-offset-color: #252527;
   }
 
@@ -85318,7 +85322,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .md\:focus-within\:ring-offset-applePayButton:focus-within {
+  .md\:focus-within\:ring-offset-payButton:focus-within {
     --tw-ring-offset-color: #252527;
   }
 
@@ -85666,7 +85670,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .md\:focus\:ring-offset-applePayButton:focus {
+  .md\:focus\:ring-offset-payButton:focus {
     --tw-ring-offset-color: #252527;
   }
 
@@ -86157,7 +86161,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .md\:ring-applePayButton {
+  .md\:ring-payButton {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -86589,7 +86593,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .md\:focus-within\:ring-applePayButton:focus-within {
+  .md\:focus-within\:ring-payButton:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -87021,7 +87025,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .md\:focus\:ring-applePayButton:focus {
+  .md\:focus\:ring-payButton:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -87677,7 +87681,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .md\:text-applePayButton {
+  .md\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -88109,7 +88113,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .group:hover .md\:group-hover\:text-applePayButton {
+  .group:hover .md\:group-hover\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -88541,7 +88545,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .md\:focus-within\:text-applePayButton:focus-within {
+  .md\:focus-within\:text-payButton:focus-within {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -88973,7 +88977,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .md\:hover\:text-applePayButton:hover {
+  .md\:hover\:text-payButton:hover {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -89405,7 +89409,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .md\:focus\:text-applePayButton:focus {
+  .md\:focus\:text-payButton:focus {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -96192,7 +96196,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
-  .lg\:divide-applePayButton > :not([hidden]) ~ :not([hidden]) {
+  .lg\:divide-payButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-divide-opacity));
   }
@@ -96808,7 +96812,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .lg\:bg-applePayButton {
+  .lg\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -97240,7 +97244,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .group:hover .lg\:group-hover\:bg-applePayButton {
+  .group:hover .lg\:group-hover\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -97672,7 +97676,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .lg\:focus-within\:bg-applePayButton:focus-within {
+  .lg\:focus-within\:bg-payButton:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -98104,7 +98108,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .lg\:hover\:bg-applePayButton:hover {
+  .lg\:hover\:bg-payButton:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -98536,7 +98540,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .lg\:focus\:bg-applePayButton:focus {
+  .lg\:focus\:bg-payButton:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -99007,7 +99011,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .lg\:from-applePayButton {
+  .lg\:from-payButton {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -99356,7 +99360,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .lg\:via-applePayButton {
+  .lg\:via-payButton {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -99704,7 +99708,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .lg\:to-applePayButton {
+  .lg\:to-payButton {
     --tw-gradient-to: #252527;
   }
 
@@ -100138,7 +100142,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .lg\:hover\:from-applePayButton:hover {
+  .lg\:hover\:from-payButton:hover {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -100487,7 +100491,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .lg\:hover\:via-applePayButton:hover {
+  .lg\:hover\:via-payButton:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -100835,7 +100839,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .lg\:hover\:to-applePayButton:hover {
+  .lg\:hover\:to-payButton:hover {
     --tw-gradient-to: #252527;
   }
 
@@ -101269,7 +101273,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .lg\:focus\:from-applePayButton:focus {
+  .lg\:focus\:from-payButton:focus {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -101618,7 +101622,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .lg\:focus\:via-applePayButton:focus {
+  .lg\:focus\:via-payButton:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -101966,7 +101970,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .lg\:focus\:to-applePayButton:focus {
+  .lg\:focus\:to-payButton:focus {
     --tw-gradient-to: #252527;
   }
 
@@ -102777,7 +102781,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .lg\:border-applePayButton {
+  .lg\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -103209,7 +103213,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .group:hover .lg\:group-hover\:border-applePayButton {
+  .group:hover .lg\:group-hover\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -103641,7 +103645,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .lg\:focus-within\:border-applePayButton:focus-within {
+  .lg\:focus-within\:border-payButton:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -104073,7 +104077,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .lg\:hover\:border-applePayButton:hover {
+  .lg\:hover\:border-payButton:hover {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -104505,7 +104509,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .lg\:focus\:border-applePayButton:focus {
+  .lg\:focus\:border-payButton:focus {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -111102,17 +111106,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .lg\:placeholder-applePayButton::-webkit-input-placeholder {
+  .lg\:placeholder-payButton::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .lg\:placeholder-applePayButton:-ms-input-placeholder {
+  .lg\:placeholder-payButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .lg\:placeholder-applePayButton::placeholder {
+  .lg\:placeholder-payButton::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -112398,17 +112402,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .lg\:focus\:placeholder-applePayButton:focus::-webkit-input-placeholder {
+  .lg\:focus\:placeholder-payButton:focus::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .lg\:focus\:placeholder-applePayButton:focus:-ms-input-placeholder {
+  .lg\:focus\:placeholder-payButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .lg\:focus\:placeholder-applePayButton:focus::placeholder {
+  .lg\:focus\:placeholder-payButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -116287,7 +116291,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .lg\:ring-offset-applePayButton {
+  .lg\:ring-offset-payButton {
     --tw-ring-offset-color: #252527;
   }
 
@@ -116635,7 +116639,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .lg\:focus-within\:ring-offset-applePayButton:focus-within {
+  .lg\:focus-within\:ring-offset-payButton:focus-within {
     --tw-ring-offset-color: #252527;
   }
 
@@ -116983,7 +116987,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .lg\:focus\:ring-offset-applePayButton:focus {
+  .lg\:focus\:ring-offset-payButton:focus {
     --tw-ring-offset-color: #252527;
   }
 
@@ -117474,7 +117478,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .lg\:ring-applePayButton {
+  .lg\:ring-payButton {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -117906,7 +117910,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .lg\:focus-within\:ring-applePayButton:focus-within {
+  .lg\:focus-within\:ring-payButton:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -118338,7 +118342,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .lg\:focus\:ring-applePayButton:focus {
+  .lg\:focus\:ring-payButton:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -118994,7 +118998,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .lg\:text-applePayButton {
+  .lg\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -119426,7 +119430,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .group:hover .lg\:group-hover\:text-applePayButton {
+  .group:hover .lg\:group-hover\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -119858,7 +119862,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .lg\:focus-within\:text-applePayButton:focus-within {
+  .lg\:focus-within\:text-payButton:focus-within {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -120290,7 +120294,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .lg\:hover\:text-applePayButton:hover {
+  .lg\:hover\:text-payButton:hover {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -120722,7 +120726,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .lg\:focus\:text-applePayButton:focus {
+  .lg\:focus\:text-payButton:focus {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -127509,7 +127513,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
-  .xl\:divide-applePayButton > :not([hidden]) ~ :not([hidden]) {
+  .xl\:divide-payButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-divide-opacity));
   }
@@ -128125,7 +128129,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .xl\:bg-applePayButton {
+  .xl\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -128557,7 +128561,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .group:hover .xl\:group-hover\:bg-applePayButton {
+  .group:hover .xl\:group-hover\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -128989,7 +128993,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .xl\:focus-within\:bg-applePayButton:focus-within {
+  .xl\:focus-within\:bg-payButton:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -129421,7 +129425,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .xl\:hover\:bg-applePayButton:hover {
+  .xl\:hover\:bg-payButton:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -129853,7 +129857,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .xl\:focus\:bg-applePayButton:focus {
+  .xl\:focus\:bg-payButton:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -130324,7 +130328,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .xl\:from-applePayButton {
+  .xl\:from-payButton {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -130673,7 +130677,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .xl\:via-applePayButton {
+  .xl\:via-payButton {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -131021,7 +131025,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .xl\:to-applePayButton {
+  .xl\:to-payButton {
     --tw-gradient-to: #252527;
   }
 
@@ -131455,7 +131459,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .xl\:hover\:from-applePayButton:hover {
+  .xl\:hover\:from-payButton:hover {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -131804,7 +131808,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .xl\:hover\:via-applePayButton:hover {
+  .xl\:hover\:via-payButton:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -132152,7 +132156,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .xl\:hover\:to-applePayButton:hover {
+  .xl\:hover\:to-payButton:hover {
     --tw-gradient-to: #252527;
   }
 
@@ -132586,7 +132590,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .xl\:focus\:from-applePayButton:focus {
+  .xl\:focus\:from-payButton:focus {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -132935,7 +132939,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .xl\:focus\:via-applePayButton:focus {
+  .xl\:focus\:via-payButton:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -133283,7 +133287,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .xl\:focus\:to-applePayButton:focus {
+  .xl\:focus\:to-payButton:focus {
     --tw-gradient-to: #252527;
   }
 
@@ -134094,7 +134098,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .xl\:border-applePayButton {
+  .xl\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -134526,7 +134530,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .group:hover .xl\:group-hover\:border-applePayButton {
+  .group:hover .xl\:group-hover\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -134958,7 +134962,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .xl\:focus-within\:border-applePayButton:focus-within {
+  .xl\:focus-within\:border-payButton:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -135390,7 +135394,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .xl\:hover\:border-applePayButton:hover {
+  .xl\:hover\:border-payButton:hover {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -135822,7 +135826,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .xl\:focus\:border-applePayButton:focus {
+  .xl\:focus\:border-payButton:focus {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -142419,17 +142423,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .xl\:placeholder-applePayButton::-webkit-input-placeholder {
+  .xl\:placeholder-payButton::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .xl\:placeholder-applePayButton:-ms-input-placeholder {
+  .xl\:placeholder-payButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .xl\:placeholder-applePayButton::placeholder {
+  .xl\:placeholder-payButton::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -143715,17 +143719,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .xl\:focus\:placeholder-applePayButton:focus::-webkit-input-placeholder {
+  .xl\:focus\:placeholder-payButton:focus::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .xl\:focus\:placeholder-applePayButton:focus:-ms-input-placeholder {
+  .xl\:focus\:placeholder-payButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .xl\:focus\:placeholder-applePayButton:focus::placeholder {
+  .xl\:focus\:placeholder-payButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -147604,7 +147608,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .xl\:ring-offset-applePayButton {
+  .xl\:ring-offset-payButton {
     --tw-ring-offset-color: #252527;
   }
 
@@ -147952,7 +147956,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .xl\:focus-within\:ring-offset-applePayButton:focus-within {
+  .xl\:focus-within\:ring-offset-payButton:focus-within {
     --tw-ring-offset-color: #252527;
   }
 
@@ -148300,7 +148304,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .xl\:focus\:ring-offset-applePayButton:focus {
+  .xl\:focus\:ring-offset-payButton:focus {
     --tw-ring-offset-color: #252527;
   }
 
@@ -148791,7 +148795,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .xl\:ring-applePayButton {
+  .xl\:ring-payButton {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -149223,7 +149227,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .xl\:focus-within\:ring-applePayButton:focus-within {
+  .xl\:focus-within\:ring-payButton:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -149655,7 +149659,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .xl\:focus\:ring-applePayButton:focus {
+  .xl\:focus\:ring-payButton:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -150311,7 +150315,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .xl\:text-applePayButton {
+  .xl\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -150743,7 +150747,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .group:hover .xl\:group-hover\:text-applePayButton {
+  .group:hover .xl\:group-hover\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -151175,7 +151179,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .xl\:focus-within\:text-applePayButton:focus-within {
+  .xl\:focus-within\:text-payButton:focus-within {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -151607,7 +151611,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .xl\:hover\:text-applePayButton:hover {
+  .xl\:hover\:text-payButton:hover {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -152039,7 +152043,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .xl\:focus\:text-applePayButton:focus {
+  .xl\:focus\:text-payButton:focus {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -158826,7 +158830,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
-  .\32xl\:divide-applePayButton > :not([hidden]) ~ :not([hidden]) {
+  .\32xl\:divide-payButton > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-divide-opacity));
   }
@@ -159442,7 +159446,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .\32xl\:bg-applePayButton {
+  .\32xl\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -159874,7 +159878,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .group:hover .\32xl\:group-hover\:bg-applePayButton {
+  .group:hover .\32xl\:group-hover\:bg-payButton {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -160306,7 +160310,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .\32xl\:focus-within\:bg-applePayButton:focus-within {
+  .\32xl\:focus-within\:bg-payButton:focus-within {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -160738,7 +160742,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .\32xl\:hover\:bg-applePayButton:hover {
+  .\32xl\:hover\:bg-payButton:hover {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -161170,7 +161174,7 @@ select {
     background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
-  .\32xl\:focus\:bg-applePayButton:focus {
+  .\32xl\:focus\:bg-payButton:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(37, 37, 39, var(--tw-bg-opacity));
   }
@@ -161641,7 +161645,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .\32xl\:from-applePayButton {
+  .\32xl\:from-payButton {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -161990,7 +161994,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .\32xl\:via-applePayButton {
+  .\32xl\:via-payButton {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -162338,7 +162342,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .\32xl\:to-applePayButton {
+  .\32xl\:to-payButton {
     --tw-gradient-to: #252527;
   }
 
@@ -162772,7 +162776,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .\32xl\:hover\:from-applePayButton:hover {
+  .\32xl\:hover\:from-payButton:hover {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -163121,7 +163125,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .\32xl\:hover\:via-applePayButton:hover {
+  .\32xl\:hover\:via-payButton:hover {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -163469,7 +163473,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .\32xl\:hover\:to-applePayButton:hover {
+  .\32xl\:hover\:to-payButton:hover {
     --tw-gradient-to: #252527;
   }
 
@@ -163903,7 +163907,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .\32xl\:focus\:from-applePayButton:focus {
+  .\32xl\:focus\:from-payButton:focus {
     --tw-gradient-from: #252527;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
@@ -164252,7 +164256,7 @@ select {
     --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
-  .\32xl\:focus\:via-applePayButton:focus {
+  .\32xl\:focus\:via-payButton:focus {
     --tw-gradient-stops: var(--tw-gradient-from), #252527, var(--tw-gradient-to, rgba(37, 37, 39, 0));
   }
 
@@ -164600,7 +164604,7 @@ select {
     --tw-gradient-to: #313D4D;
   }
 
-  .\32xl\:focus\:to-applePayButton:focus {
+  .\32xl\:focus\:to-payButton:focus {
     --tw-gradient-to: #252527;
   }
 
@@ -165411,7 +165415,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .\32xl\:border-applePayButton {
+  .\32xl\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -165843,7 +165847,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .group:hover .\32xl\:group-hover\:border-applePayButton {
+  .group:hover .\32xl\:group-hover\:border-payButton {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -166275,7 +166279,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .\32xl\:focus-within\:border-applePayButton:focus-within {
+  .\32xl\:focus-within\:border-payButton:focus-within {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -166707,7 +166711,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .\32xl\:hover\:border-applePayButton:hover {
+  .\32xl\:hover\:border-payButton:hover {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -167139,7 +167143,7 @@ select {
     border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
-  .\32xl\:focus\:border-applePayButton:focus {
+  .\32xl\:focus\:border-payButton:focus {
     --tw-border-opacity: 1;
     border-color: rgba(37, 37, 39, var(--tw-border-opacity));
   }
@@ -173736,17 +173740,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:placeholder-applePayButton::-webkit-input-placeholder {
+  .\32xl\:placeholder-payButton::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:placeholder-applePayButton:-ms-input-placeholder {
+  .\32xl\:placeholder-payButton:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:placeholder-applePayButton::placeholder {
+  .\32xl\:placeholder-payButton::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -175032,17 +175036,17 @@ select {
     color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:focus\:placeholder-applePayButton:focus::-webkit-input-placeholder {
+  .\32xl\:focus\:placeholder-payButton:focus::-webkit-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:focus\:placeholder-applePayButton:focus:-ms-input-placeholder {
+  .\32xl\:focus\:placeholder-payButton:focus:-ms-input-placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:focus\:placeholder-applePayButton:focus::placeholder {
+  .\32xl\:focus\:placeholder-payButton:focus::placeholder {
     --tw-placeholder-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-placeholder-opacity));
   }
@@ -178921,7 +178925,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .\32xl\:ring-offset-applePayButton {
+  .\32xl\:ring-offset-payButton {
     --tw-ring-offset-color: #252527;
   }
 
@@ -179269,7 +179273,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .\32xl\:focus-within\:ring-offset-applePayButton:focus-within {
+  .\32xl\:focus-within\:ring-offset-payButton:focus-within {
     --tw-ring-offset-color: #252527;
   }
 
@@ -179617,7 +179621,7 @@ select {
     --tw-ring-offset-color: #313D4D;
   }
 
-  .\32xl\:focus\:ring-offset-applePayButton:focus {
+  .\32xl\:focus\:ring-offset-payButton:focus {
     --tw-ring-offset-color: #252527;
   }
 
@@ -180108,7 +180112,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .\32xl\:ring-applePayButton {
+  .\32xl\:ring-payButton {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -180540,7 +180544,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .\32xl\:focus-within\:ring-applePayButton:focus-within {
+  .\32xl\:focus-within\:ring-payButton:focus-within {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -180972,7 +180976,7 @@ select {
     --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
-  .\32xl\:focus\:ring-applePayButton:focus {
+  .\32xl\:focus\:ring-payButton:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgba(37, 37, 39, var(--tw-ring-opacity));
   }
@@ -181628,7 +181632,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .\32xl\:text-applePayButton {
+  .\32xl\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -182060,7 +182064,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .group:hover .\32xl\:group-hover\:text-applePayButton {
+  .group:hover .\32xl\:group-hover\:text-payButton {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -182492,7 +182496,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .\32xl\:focus-within\:text-applePayButton:focus-within {
+  .\32xl\:focus-within\:text-payButton:focus-within {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -182924,7 +182928,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .\32xl\:hover\:text-applePayButton:hover {
+  .\32xl\:hover\:text-payButton:hover {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }
@@ -183356,7 +183360,7 @@ select {
     color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
-  .\32xl\:focus\:text-applePayButton:focus {
+  .\32xl\:focus\:text-payButton:focus {
     --tw-text-opacity: 1;
     color: rgba(37, 37, 39, var(--tw-text-opacity));
   }

@@ -10,6 +10,7 @@ export default function Stars() {
         <div>
             <Box component="fieldset" mb={3} borderColor="transparent">
                 <Rating
+                    className="mb-0"
                     name="simple-controlled"
                     value={value}
                     onChange={(event, newValue) => {

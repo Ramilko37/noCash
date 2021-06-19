@@ -30,7 +30,7 @@ const radioArray = [
 ]
 
 const RadioButtons: React.FC<{}> = () =>
-   <div className="flex justify-center mb-4">
+   <div className="flex justify-center">
        {
            radioArray.map(e =>
            <RadioButton id={e.id} content={e.content}/>

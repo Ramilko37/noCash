@@ -6,7 +6,7 @@ module.exports = {
       colors: {
         'button-color': 'linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)',
         'textarea-bg': '#313D4D',
-        'applePayButton': '#252527',
+        'payButton': '#252527',
       },
       fontFamily: {
         'sans': 'Helvetica, Arial, Inter, sans-serif',

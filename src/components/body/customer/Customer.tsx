@@ -2,13 +2,14 @@ import React from 'react';
 
 const Customer: React.FC = () =>
     <div className="
-    lg:h-full lg:w-1/4
+    lg:h-2/3 lg:w-1/3
     md:h-1/4 md:w-full
     sm:h-1/4 sm:w-full
     border-solid shadow-2xl rounded-lg
     flex items-center justify-center lg:flex-col md:flex-row sm:flex-row
     space-y-6
     space-x-6
+    mt-10
     ">
         <img
             className="rounded-full border-yellow-500 w-32 h-32"
