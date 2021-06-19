@@ -31,7 +31,7 @@ const Tip: React.FC<{}> = () => {
         lg:h-full lg:w-3/4
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
-        mt-4
+        mt-10
         ">
                 <div className="m-20 mt-2 mb-6 max-w-lg flex flex-col justify-center mx-auto">
                     <TipInput handleAmount={handleAmount} amount={amount}/>
