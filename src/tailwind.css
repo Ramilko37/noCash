@@ -12,3 +12,9 @@
         color: #FFFFFF;
     }
 }
+
+@layer utilities {
+    .border-bottom-color {
+        border-bottom-color: white;
+    }
+}

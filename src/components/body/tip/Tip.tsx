@@ -56,10 +56,14 @@ const Tip: React.FC<{}> = () => {
                     </div>
 
                 </div>
-                <div className="flex justify-center">
-                    <ApplePayButton/>
+                <div className="flex justify-center flex-wrap">
+                    <ApplePayButton />
                     <CardPayButton handleStep={() => setStep(1)}/>
                 </div>
+
+                    <p className="max-w-xs text-center text-white mx-auto mt-4">By making a payment, you agree to the terms of the NoCash service</p>
+
+
 
             </div>
 
