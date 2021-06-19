@@ -45,23 +45,23 @@ const Tip: React.FC<{}> = () => {
                     <Radiobuttons/>
                 </div>
                 <Input/>
-                <div className="flex justify-center space-x-1 max-w-[400px] mx-auto">
-                    <div className="flex items-center mr-4 mb-4 text-white flex-wrap mt-4">
+                <div className="flex justify-center space-x-1 mx-auto">
+                    <div className="flex pt-1 mx-auto text-white flex-wrap mt-4 justify-center">
                         <input id="radio7" type="checkbox" name="radio" className="hidden"/>
                         <label htmlFor="radio7" className="flex items-center cursor-pointer">
                             <RadioButton id={'radio7'}
-                                         content={'I want to cover transaction costs (5% от суммы \n' +
-                                         'чаевых €) so that the employee receives the full amount'}/>
+                                         content={''}/>
+                            <p className="text-sm max-w-md">I want to cover transaction costs (5% от суммы чаевых €) so that the employee receives the full amount</p>
                         </label>
                     </div>
 
                 </div>
-                <div className="flex justify-center flex-wrap">
+                <div className="flex justify-center flex-wrap mt-4">
                     <ApplePayButton />
                     <CardPayButton handleStep={() => setStep(1)}/>
                 </div>
 
-                    <p className="max-w-xs text-center text-white mx-auto mt-4">By making a payment, you agree to the terms of the NoCash service</p>
+                    <p className="max-w-md text-center text-white mx-auto mt-4 mb-10 text-xs">By making a payment, you agree to the terms of the NoCash service</p>
 
 
 
