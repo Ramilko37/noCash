@@ -5,7 +5,7 @@ import {Route} from "react-router";
 
 function App() {
     return (
-        <div className="w-screen bg-gray-800 pb-10">
+        <div className="h-screen w-screen bg-gray-800 pb-10">
             <Route path="/:uuid" exact>
                 <Header/>
                 <Body/>
