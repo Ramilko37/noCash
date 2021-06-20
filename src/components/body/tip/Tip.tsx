@@ -28,6 +28,7 @@ const Tip: React.FC<{}> = () => {
             ?
 
             <div className="
+
         lg:h-full lg:w-3/4
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
@@ -56,7 +57,7 @@ const Tip: React.FC<{}> = () => {
                     </div>
 
                 </div>
-                <div className="flex justify-center flex-wrap mt-4">
+                <div className="w-60 flex-col mx-auto lg:flex-row md:flex-row sm:flex-col mt-4">
                     <ApplePayButton />
                     <CardPayButton handleStep={() => setStep(1)}/>
                 </div>

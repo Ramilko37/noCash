@@ -2,11 +2,13 @@ import React from 'react';
 
 const Customer: React.FC = () =>
     <div className="
+    w-full
     lg:h-2/3 lg:w-1/3
     md:h-1/4 md:w-full
     sm:h-1/4 sm:w-full
     border-solid shadow-2xl rounded-lg
-    flex items-center justify-center lg:flex-col md:flex-row sm:flex-row
+    flex flex-row-reverse
+    items-center justify-center lg:flex-col md:flex-row sm:flex-row
     space-y-6
     space-x-6
     mt-10
