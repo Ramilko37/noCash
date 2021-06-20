@@ -1,9 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import axios from "axios";
+import {useParams} from "react-router";
 
-const Customer: React.FC = () =>
-    <div className="
-    w-full
-    lg:h-2/3 lg:w-1/3
+const Customer: React.FC = () => {
+
+    let [customer, setCustomer] = React.useState({name: "", imageUrl: "", place: ""})
+
+    let uuid = useParams();
+    console.log("UUID: ", uuid)
+
+    useEffect(() => {
+        axios
+            .post("http://localhost:8083/customer", uuid)
+            .then((response) => {
+                console.log("Response: ", response);
+                setCustomer(response.data);
+            })
+            .catch((error) => {
+                console.log("No customer: ", error);
+            });
+    }, []);
+
+    return (<div className="
+    lg:h-full lg:w-1/4
     md:h-1/4 md:w-full
     sm:h-1/4 sm:w-full
     border-solid shadow-2xl rounded-lg
@@ -15,18 +34,18 @@ const Customer: React.FC = () =>
     ">
         <img
             className="rounded-full border-yellow-500 w-32 h-32"
-            src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+            src={customer.imageUrl}
             alt=""
         />
         <div className="flex flex-col space-y-6 space-x-6">
             <span className="text-2xl text-white">
-                Nicola Bilinac
+                {customer.name}
             </span>
             <span className="text-lg text-gray-300">
-            Starbucks
+            {customer.place}
             </span>
         </div>
 
-    </div>
-
+    </div>)
+}
 export default Customer

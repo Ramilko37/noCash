@@ -32182,6 +32182,10 @@ select {
   border-bottom-color: white;
 }
 
+body {
+  background: rgb(31 42 56);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

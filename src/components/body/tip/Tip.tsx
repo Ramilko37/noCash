@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import TipButton from "./tip-button/TipButton";
 import TipInput from "./tip-input/TipInput";
 import Rate from "../review/rate/Rate";
