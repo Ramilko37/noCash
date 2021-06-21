@@ -28,7 +28,6 @@ const Tip: React.FC<{}> = () => {
             ?
 
             <div className="
-
         lg:h-full lg:w-3/4
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
@@ -46,7 +45,7 @@ const Tip: React.FC<{}> = () => {
                     <Radiobuttons/>
                 </div>
                 <Input/>
-                <div className="flex justify-center space-x-1 mx-auto">
+                <div className="w-72 sm:w-96 flex space-x-1 mx-auto">
                     <div className="flex pt-1 mx-auto text-white flex-wrap mt-4 justify-center">
                         <input id="radio7" type="checkbox" name="radio" className="hidden"/>
                         <label htmlFor="radio7" className="flex items-center cursor-pointer">
@@ -57,7 +56,7 @@ const Tip: React.FC<{}> = () => {
                     </div>
 
                 </div>
-                <div className="w-60 flex-col mx-auto lg:w-4/5 lg:justify-center    lg:flex md:flex-row sm:flex-col mt-4">
+                <div className="w-72 flex-col md:flex mx-auto lg:w-4/5 lg:justify-center    lg:flex md:flex-row sm:flex-col mt-4">
                     <ApplePayButton />
                     <CardPayButton handleStep={() => setStep(1)}/>
                 </div>
