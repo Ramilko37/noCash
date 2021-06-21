@@ -34,14 +34,14 @@ const Tip: React.FC<{}> = () => {
         sm:h-3/4 sm:w-full
         mt-10
         ">
-                <div className="m-20 mt-2 mb-6 max-w-lg flex flex-col justify-center mx-auto">
+                <div className="m-20 mt-2 mb-6 max-w-max flex flex-col justify-center mx-auto">
                     <TipInput handleAmount={handleAmount} amount={amount}/>
-                    <div className="flex justify-between mt-4">
+                    <div className="flex mt-4">
                         {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
                     </div>
                 </div>
                 <Rate/>
-                <div className="flex-col justify-center mx-auto text-white">
+                <div className="flex-col w-60 justify-center mx-auto text-white">
                     <h3 className="text-center mb-6">What can we do better?</h3>
                     <Radiobuttons/>
                 </div>
@@ -57,7 +57,7 @@ const Tip: React.FC<{}> = () => {
                     </div>
 
                 </div>
-                <div className="w-60 flex-col mx-auto lg:flex-row md:flex-row sm:flex-col mt-4">
+                <div className="w-60 flex-col mx-auto lg:w-4/5 lg:justify-center    lg:flex md:flex-row sm:flex-col mt-4">
                     <ApplePayButton />
                     <CardPayButton handleStep={() => setStep(1)}/>
                 </div>

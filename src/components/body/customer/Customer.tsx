@@ -11,7 +11,7 @@ const Customer: React.FC = () => {
 
     useEffect(() => {
         axios
-            .post("http://localhost:8083/customer", uuid)
+            .post("https://quiet-platform-317414.uc.r.appspot.com/customer", uuid)
             .then((response) => {
                 console.log("Response: ", response);
                 setCustomer(response.data);
@@ -22,18 +22,18 @@ const Customer: React.FC = () => {
     }, []);
 
     return (<div className="
-    lg:h-full lg:w-1/4
-    md:h-1/4 md:w-full
-    sm:h-1/4 sm:w-full
+    lg:max-h-full lg:w-1/4
+    lg:items-center
+    lg:mt-0
     border-solid shadow-2xl rounded-lg
     flex flex-row-reverse
-    items-center justify-center lg:flex-col md:flex-row sm:flex-row
+    justify-center lg:flex-col md:flex-row sm:flex-row
     space-y-6
     space-x-6
     mt-10
     ">
         <img
-            className="rounded-full border-yellow-500 w-32 h-32"
+            className="img-rounded border-yellow-500 w-32 h-32"
             src={customer.imageUrl}
             alt=""
         />

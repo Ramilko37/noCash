@@ -21,4 +21,13 @@ body {
     .border-bottom-color {
         border-bottom-color: white;
     }
+    .btn-container-width {
+        max-width: 485px
+    }
+    .btncolor {
+        color: white;
+    }
+    .img-rounded {
+        border-radius: 9999px;
+    }
 }
