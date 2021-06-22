@@ -33,7 +33,7 @@ const Customer: React.FC = () => {
     mt-10
     ">
         <img
-            className="img-rounded border-yellow-500 w-32 h-32"
+            className="img-rounded border-2 border-yellow-600 w-32 h-32"
             src={customer.imageUrl}
             alt=""
         />
