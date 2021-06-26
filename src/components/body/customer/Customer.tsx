@@ -38,12 +38,12 @@ const Customer: React.FC = () => {
             src={customer.imageUrl}
             alt=""
         />
-        <div className="flex flex-col space-y-6 space-x-6">
+        <div className="flex flex-col m-0">
             <span className="text-2xl text-white">
-                {customer.name}
+               Ramil Galyamdin
             </span>
             <span className="text-lg text-gray-300">
-            {customer.place}
+            Cosmo Trooper
             </span>
         </div>
 

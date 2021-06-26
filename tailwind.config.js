@@ -3,8 +3,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+
+
+      backgroundImage: {
+        'gradient': 'linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)',
+      },
       colors: {
-        'button-color': 'linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)',
+        'tipButton': '#313D4D',
         'textarea-bg': '#313D4D',
         'payButton': '#252527',
       },

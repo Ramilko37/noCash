@@ -30,5 +30,8 @@ body {
     .img-rounded {
         border-radius: 9999px;
     }
+    .gradient-btn-color {
+        background: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)
+    }
 
 }

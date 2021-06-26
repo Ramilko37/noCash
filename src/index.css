@@ -1934,8 +1934,9 @@ video {
   border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
 }
 
-.divide-button-color > :not([hidden]) ~ :not([hidden]) {
-  border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.divide-tipButton > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
 }
 
 .divide-textarea-bg > :not([hidden]) ~ :not([hidden]) {
@@ -2550,8 +2551,9 @@ video {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
-.bg-button-color {
-  background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.bg-tipButton {
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
 .bg-textarea-bg {
@@ -2982,8 +2984,9 @@ video {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
-.group:hover .group-hover\:bg-button-color {
-  background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.group:hover .group-hover\:bg-tipButton {
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:bg-textarea-bg {
@@ -3414,8 +3417,9 @@ video {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
-.focus-within\:bg-button-color:focus-within {
-  background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus-within\:bg-tipButton:focus-within {
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
 .focus-within\:bg-textarea-bg:focus-within {
@@ -3846,8 +3850,9 @@ video {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
-.hover\:bg-button-color:hover {
-  background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.hover\:bg-tipButton:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
 .hover\:bg-textarea-bg:hover {
@@ -4278,8 +4283,9 @@ video {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
-.focus\:bg-button-color:focus {
-  background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:bg-tipButton:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
 }
 
 .focus\:bg-textarea-bg:focus {
@@ -4326,6 +4332,10 @@ video {
 
 .bg-gradient-to-tl {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+}
+
+.bg-gradient {
+  background-image: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
 }
 
 .from-transparent {
@@ -4748,9 +4758,9 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
-.from-button-color {
-  --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+.from-tipButton {
+  --tw-gradient-from: #313D4D;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
 .from-textarea-bg {
@@ -5099,8 +5109,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
-.via-button-color {
-  --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+.via-tipButton {
+  --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
 .via-textarea-bg {
@@ -5447,8 +5457,8 @@ video {
   --tw-gradient-to: #831843;
 }
 
-.to-button-color {
-  --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.to-tipButton {
+  --tw-gradient-to: #313D4D;
 }
 
 .to-textarea-bg {
@@ -5879,9 +5889,9 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
-.hover\:from-button-color:hover {
-  --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+.hover\:from-tipButton:hover {
+  --tw-gradient-from: #313D4D;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
 .hover\:from-textarea-bg:hover {
@@ -6230,8 +6240,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
-.hover\:via-button-color:hover {
-  --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+.hover\:via-tipButton:hover {
+  --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
 .hover\:via-textarea-bg:hover {
@@ -6578,8 +6588,8 @@ video {
   --tw-gradient-to: #831843;
 }
 
-.hover\:to-button-color:hover {
-  --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.hover\:to-tipButton:hover {
+  --tw-gradient-to: #313D4D;
 }
 
 .hover\:to-textarea-bg:hover {
@@ -7010,9 +7020,9 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
-.focus\:from-button-color:focus {
-  --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+.focus\:from-tipButton:focus {
+  --tw-gradient-from: #313D4D;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
 .focus\:from-textarea-bg:focus {
@@ -7361,8 +7371,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
 }
 
-.focus\:via-button-color:focus {
-  --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+.focus\:via-tipButton:focus {
+  --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
 }
 
 .focus\:via-textarea-bg:focus {
@@ -7709,8 +7719,8 @@ video {
   --tw-gradient-to: #831843;
 }
 
-.focus\:to-button-color:focus {
-  --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:to-tipButton:focus {
+  --tw-gradient-to: #313D4D;
 }
 
 .focus\:to-textarea-bg:focus {
@@ -8519,8 +8529,9 @@ video {
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
 }
 
-.border-button-color {
-  border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.border-tipButton {
+  --tw-border-opacity: 1;
+  border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
 .border-textarea-bg {
@@ -8951,8 +8962,9 @@ video {
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
 }
 
-.group:hover .group-hover\:border-button-color {
-  border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.group:hover .group-hover\:border-tipButton {
+  --tw-border-opacity: 1;
+  border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
 .group:hover .group-hover\:border-textarea-bg {
@@ -9383,8 +9395,9 @@ video {
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
 }
 
-.focus-within\:border-button-color:focus-within {
-  border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus-within\:border-tipButton:focus-within {
+  --tw-border-opacity: 1;
+  border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
 .focus-within\:border-textarea-bg:focus-within {
@@ -9815,8 +9828,9 @@ video {
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
 }
 
-.hover\:border-button-color:hover {
-  border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.hover\:border-tipButton:hover {
+  --tw-border-opacity: 1;
+  border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
 .hover\:border-textarea-bg:hover {
@@ -10247,8 +10261,9 @@ video {
   border-color: rgba(131, 24, 67, var(--tw-border-opacity));
 }
 
-.focus\:border-button-color:focus {
-  border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:border-tipButton:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(49, 61, 77, var(--tw-border-opacity));
 }
 
 .focus\:border-textarea-bg:focus {
@@ -17106,16 +17121,19 @@ video {
   color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
 }
 
-.placeholder-button-color::-webkit-input-placeholder {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.placeholder-tipButton::-webkit-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
 }
 
-.placeholder-button-color:-ms-input-placeholder {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.placeholder-tipButton:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
 }
 
-.placeholder-button-color::placeholder {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.placeholder-tipButton::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
 }
 
 .placeholder-textarea-bg::-webkit-input-placeholder {
@@ -18402,16 +18420,19 @@ video {
   color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
 }
 
-.focus\:placeholder-button-color:focus::-webkit-input-placeholder {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:placeholder-tipButton:focus::-webkit-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
 }
 
-.focus\:placeholder-button-color:focus:-ms-input-placeholder {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:placeholder-tipButton:focus:-ms-input-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
 }
 
-.focus\:placeholder-button-color:focus::placeholder {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:placeholder-tipButton:focus::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
 }
 
 .focus\:placeholder-textarea-bg:focus::-webkit-input-placeholder {
@@ -22323,8 +22344,8 @@ video {
   --tw-ring-offset-color: #831843;
 }
 
-.ring-offset-button-color {
-  --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.ring-offset-tipButton {
+  --tw-ring-offset-color: #313D4D;
 }
 
 .ring-offset-textarea-bg {
@@ -22671,8 +22692,8 @@ video {
   --tw-ring-offset-color: #831843;
 }
 
-.focus-within\:ring-offset-button-color:focus-within {
-  --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus-within\:ring-offset-tipButton:focus-within {
+  --tw-ring-offset-color: #313D4D;
 }
 
 .focus-within\:ring-offset-textarea-bg:focus-within {
@@ -23019,8 +23040,8 @@ video {
   --tw-ring-offset-color: #831843;
 }
 
-.focus\:ring-offset-button-color:focus {
-  --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:ring-offset-tipButton:focus {
+  --tw-ring-offset-color: #313D4D;
 }
 
 .focus\:ring-offset-textarea-bg:focus {
@@ -23509,8 +23530,9 @@ video {
   --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
 }
 
-.ring-button-color {
-  --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.ring-tipButton {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
 }
 
 .ring-textarea-bg {
@@ -23941,8 +23963,9 @@ video {
   --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
 }
 
-.focus-within\:ring-button-color:focus-within {
-  --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus-within\:ring-tipButton:focus-within {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
 }
 
 .focus-within\:ring-textarea-bg:focus-within {
@@ -24373,8 +24396,9 @@ video {
   --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
 }
 
-.focus\:ring-button-color:focus {
-  --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:ring-tipButton:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
 }
 
 .focus\:ring-textarea-bg:focus {
@@ -25029,8 +25053,9 @@ video {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
-.text-button-color {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.text-tipButton {
+  --tw-text-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
 .text-textarea-bg {
@@ -25461,8 +25486,9 @@ video {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
-.group:hover .group-hover\:text-button-color {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.group:hover .group-hover\:text-tipButton {
+  --tw-text-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-textarea-bg {
@@ -25893,8 +25919,9 @@ video {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
-.focus-within\:text-button-color:focus-within {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus-within\:text-tipButton:focus-within {
+  --tw-text-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
 .focus-within\:text-textarea-bg:focus-within {
@@ -26325,8 +26352,9 @@ video {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
-.hover\:text-button-color:hover {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.hover\:text-tipButton:hover {
+  --tw-text-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
 .hover\:text-textarea-bg:hover {
@@ -26757,8 +26785,9 @@ video {
   color: rgba(131, 24, 67, var(--tw-text-opacity));
 }
 
-.focus\:text-button-color:focus {
-  color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+.focus\:text-tipButton:focus {
+  --tw-text-opacity: 1;
+  color: rgba(49, 61, 77, var(--tw-text-opacity));
 }
 
 .focus\:text-textarea-bg:focus {
@@ -32311,6 +32340,10 @@ video {
   border-radius: 9999px;
 }
 
+.gradient-btn-color {
+  background: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)
+}
+
 body {
   background: rgb(31 42 56);
 }
@@ -33686,8 +33719,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
-  .sm\:divide-button-color > :not([hidden]) ~ :not([hidden]) {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:divide-tipButton > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
   .sm\:divide-textarea-bg > :not([hidden]) ~ :not([hidden]) {
@@ -34302,8 +34336,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .sm\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .sm\:bg-textarea-bg {
@@ -34734,8 +34769,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .group:hover .sm\:group-hover\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .sm\:group-hover\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .group:hover .sm\:group-hover\:bg-textarea-bg {
@@ -35166,8 +35202,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .sm\:focus-within\:bg-button-color:focus-within {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus-within\:bg-tipButton:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .sm\:focus-within\:bg-textarea-bg:focus-within {
@@ -35598,8 +35635,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .sm\:hover\:bg-button-color:hover {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:hover\:bg-tipButton:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-textarea-bg:hover {
@@ -36030,8 +36068,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .sm\:focus\:bg-button-color:focus {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:bg-tipButton:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .sm\:focus\:bg-textarea-bg:focus {
@@ -36078,6 +36117,10 @@ body {
 
   .sm\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .sm\:bg-gradient {
+    background-image: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
   }
 
   .sm\:from-transparent {
@@ -36500,9 +36543,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .sm\:from-button-color {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .sm\:from-tipButton {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .sm\:from-textarea-bg {
@@ -36851,8 +36894,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .sm\:via-button-color {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .sm\:via-tipButton {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .sm\:via-textarea-bg {
@@ -37199,8 +37242,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .sm\:to-button-color {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:to-tipButton {
+    --tw-gradient-to: #313D4D;
   }
 
   .sm\:to-textarea-bg {
@@ -37631,9 +37674,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .sm\:hover\:from-button-color:hover {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .sm\:hover\:from-tipButton:hover {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .sm\:hover\:from-textarea-bg:hover {
@@ -37982,8 +38025,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .sm\:hover\:via-button-color:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .sm\:hover\:via-tipButton:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .sm\:hover\:via-textarea-bg:hover {
@@ -38330,8 +38373,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .sm\:hover\:to-button-color:hover {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:hover\:to-tipButton:hover {
+    --tw-gradient-to: #313D4D;
   }
 
   .sm\:hover\:to-textarea-bg:hover {
@@ -38762,9 +38805,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .sm\:focus\:from-button-color:focus {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .sm\:focus\:from-tipButton:focus {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .sm\:focus\:from-textarea-bg:focus {
@@ -39113,8 +39156,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .sm\:focus\:via-button-color:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .sm\:focus\:via-tipButton:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .sm\:focus\:via-textarea-bg:focus {
@@ -39461,8 +39504,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .sm\:focus\:to-button-color:focus {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:to-tipButton:focus {
+    --tw-gradient-to: #313D4D;
   }
 
   .sm\:focus\:to-textarea-bg:focus {
@@ -40271,8 +40314,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .sm\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .sm\:border-textarea-bg {
@@ -40703,8 +40747,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .group:hover .sm\:group-hover\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .sm\:group-hover\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .group:hover .sm\:group-hover\:border-textarea-bg {
@@ -41135,8 +41180,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .sm\:focus-within\:border-button-color:focus-within {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus-within\:border-tipButton:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .sm\:focus-within\:border-textarea-bg:focus-within {
@@ -41567,8 +41613,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .sm\:hover\:border-button-color:hover {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:hover\:border-tipButton:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .sm\:hover\:border-textarea-bg:hover {
@@ -41999,8 +42046,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .sm\:focus\:border-button-color:focus {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:border-tipButton:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .sm\:focus\:border-textarea-bg:focus {
@@ -48858,16 +48906,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .sm\:placeholder-button-color::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:placeholder-tipButton::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .sm\:placeholder-button-color:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:placeholder-tipButton:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .sm\:placeholder-button-color::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:placeholder-tipButton::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .sm\:placeholder-textarea-bg::-webkit-input-placeholder {
@@ -50154,16 +50205,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .sm\:focus\:placeholder-button-color:focus::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:placeholder-tipButton:focus::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .sm\:focus\:placeholder-button-color:focus:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:placeholder-tipButton:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .sm\:focus\:placeholder-button-color:focus::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:placeholder-tipButton:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-textarea-bg:focus::-webkit-input-placeholder {
@@ -54062,8 +54116,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .sm\:ring-offset-button-color {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:ring-offset-tipButton {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .sm\:ring-offset-textarea-bg {
@@ -54410,8 +54464,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .sm\:focus-within\:ring-offset-button-color:focus-within {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus-within\:ring-offset-tipButton:focus-within {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .sm\:focus-within\:ring-offset-textarea-bg:focus-within {
@@ -54758,8 +54812,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .sm\:focus\:ring-offset-button-color:focus {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:ring-offset-tipButton:focus {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .sm\:focus\:ring-offset-textarea-bg:focus {
@@ -55248,8 +55302,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .sm\:ring-button-color {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:ring-tipButton {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .sm\:ring-textarea-bg {
@@ -55680,8 +55735,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .sm\:focus-within\:ring-button-color:focus-within {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus-within\:ring-tipButton:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .sm\:focus-within\:ring-textarea-bg:focus-within {
@@ -56112,8 +56168,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .sm\:focus\:ring-button-color:focus {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:ring-tipButton:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .sm\:focus\:ring-textarea-bg:focus {
@@ -56768,8 +56825,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .sm\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .sm\:text-textarea-bg {
@@ -57200,8 +57258,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .group:hover .sm\:group-hover\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .sm\:group-hover\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .group:hover .sm\:group-hover\:text-textarea-bg {
@@ -57632,8 +57691,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .sm\:focus-within\:text-button-color:focus-within {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus-within\:text-tipButton:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .sm\:focus-within\:text-textarea-bg:focus-within {
@@ -58064,8 +58124,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .sm\:hover\:text-button-color:hover {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:hover\:text-tipButton:hover {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .sm\:hover\:text-textarea-bg:hover {
@@ -58496,8 +58557,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .sm\:focus\:text-button-color:focus {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .sm\:focus\:text-tipButton:focus {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .sm\:focus\:text-textarea-bg:focus {
@@ -65283,8 +65345,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
-  .md\:divide-button-color > :not([hidden]) ~ :not([hidden]) {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:divide-tipButton > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
   .md\:divide-textarea-bg > :not([hidden]) ~ :not([hidden]) {
@@ -65899,8 +65962,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .md\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .md\:bg-textarea-bg {
@@ -66331,8 +66395,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .group:hover .md\:group-hover\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .md\:group-hover\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .group:hover .md\:group-hover\:bg-textarea-bg {
@@ -66763,8 +66828,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .md\:focus-within\:bg-button-color:focus-within {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus-within\:bg-tipButton:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .md\:focus-within\:bg-textarea-bg:focus-within {
@@ -67195,8 +67261,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .md\:hover\:bg-button-color:hover {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:hover\:bg-tipButton:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .md\:hover\:bg-textarea-bg:hover {
@@ -67627,8 +67694,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .md\:focus\:bg-button-color:focus {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:bg-tipButton:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .md\:focus\:bg-textarea-bg:focus {
@@ -67675,6 +67743,10 @@ body {
 
   .md\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-gradient {
+    background-image: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
   }
 
   .md\:from-transparent {
@@ -68097,9 +68169,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .md\:from-button-color {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .md\:from-tipButton {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .md\:from-textarea-bg {
@@ -68448,8 +68520,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .md\:via-button-color {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .md\:via-tipButton {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .md\:via-textarea-bg {
@@ -68796,8 +68868,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .md\:to-button-color {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:to-tipButton {
+    --tw-gradient-to: #313D4D;
   }
 
   .md\:to-textarea-bg {
@@ -69228,9 +69300,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .md\:hover\:from-button-color:hover {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .md\:hover\:from-tipButton:hover {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .md\:hover\:from-textarea-bg:hover {
@@ -69579,8 +69651,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .md\:hover\:via-button-color:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .md\:hover\:via-tipButton:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .md\:hover\:via-textarea-bg:hover {
@@ -69927,8 +69999,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .md\:hover\:to-button-color:hover {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:hover\:to-tipButton:hover {
+    --tw-gradient-to: #313D4D;
   }
 
   .md\:hover\:to-textarea-bg:hover {
@@ -70359,9 +70431,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .md\:focus\:from-button-color:focus {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .md\:focus\:from-tipButton:focus {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .md\:focus\:from-textarea-bg:focus {
@@ -70710,8 +70782,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .md\:focus\:via-button-color:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .md\:focus\:via-tipButton:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .md\:focus\:via-textarea-bg:focus {
@@ -71058,8 +71130,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .md\:focus\:to-button-color:focus {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:to-tipButton:focus {
+    --tw-gradient-to: #313D4D;
   }
 
   .md\:focus\:to-textarea-bg:focus {
@@ -71868,8 +71940,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .md\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .md\:border-textarea-bg {
@@ -72300,8 +72373,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .group:hover .md\:group-hover\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .md\:group-hover\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .group:hover .md\:group-hover\:border-textarea-bg {
@@ -72732,8 +72806,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .md\:focus-within\:border-button-color:focus-within {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus-within\:border-tipButton:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .md\:focus-within\:border-textarea-bg:focus-within {
@@ -73164,8 +73239,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .md\:hover\:border-button-color:hover {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:hover\:border-tipButton:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .md\:hover\:border-textarea-bg:hover {
@@ -73596,8 +73672,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .md\:focus\:border-button-color:focus {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:border-tipButton:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .md\:focus\:border-textarea-bg:focus {
@@ -80455,16 +80532,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .md\:placeholder-button-color::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:placeholder-tipButton::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .md\:placeholder-button-color:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:placeholder-tipButton:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .md\:placeholder-button-color::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:placeholder-tipButton::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .md\:placeholder-textarea-bg::-webkit-input-placeholder {
@@ -81751,16 +81831,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .md\:focus\:placeholder-button-color:focus::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:placeholder-tipButton:focus::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .md\:focus\:placeholder-button-color:focus:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:placeholder-tipButton:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .md\:focus\:placeholder-button-color:focus::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:placeholder-tipButton:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .md\:focus\:placeholder-textarea-bg:focus::-webkit-input-placeholder {
@@ -85659,8 +85742,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .md\:ring-offset-button-color {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:ring-offset-tipButton {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .md\:ring-offset-textarea-bg {
@@ -86007,8 +86090,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .md\:focus-within\:ring-offset-button-color:focus-within {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus-within\:ring-offset-tipButton:focus-within {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .md\:focus-within\:ring-offset-textarea-bg:focus-within {
@@ -86355,8 +86438,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .md\:focus\:ring-offset-button-color:focus {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:ring-offset-tipButton:focus {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .md\:focus\:ring-offset-textarea-bg:focus {
@@ -86845,8 +86928,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .md\:ring-button-color {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:ring-tipButton {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .md\:ring-textarea-bg {
@@ -87277,8 +87361,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .md\:focus-within\:ring-button-color:focus-within {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus-within\:ring-tipButton:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .md\:focus-within\:ring-textarea-bg:focus-within {
@@ -87709,8 +87794,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .md\:focus\:ring-button-color:focus {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:ring-tipButton:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .md\:focus\:ring-textarea-bg:focus {
@@ -88365,8 +88451,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .md\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .md\:text-textarea-bg {
@@ -88797,8 +88884,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .group:hover .md\:group-hover\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .md\:group-hover\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .group:hover .md\:group-hover\:text-textarea-bg {
@@ -89229,8 +89317,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .md\:focus-within\:text-button-color:focus-within {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus-within\:text-tipButton:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .md\:focus-within\:text-textarea-bg:focus-within {
@@ -89661,8 +89750,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .md\:hover\:text-button-color:hover {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:hover\:text-tipButton:hover {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .md\:hover\:text-textarea-bg:hover {
@@ -90093,8 +90183,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .md\:focus\:text-button-color:focus {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .md\:focus\:text-tipButton:focus {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .md\:focus\:text-textarea-bg:focus {
@@ -96880,8 +96971,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
-  .lg\:divide-button-color > :not([hidden]) ~ :not([hidden]) {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:divide-tipButton > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
   .lg\:divide-textarea-bg > :not([hidden]) ~ :not([hidden]) {
@@ -97496,8 +97588,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .lg\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .lg\:bg-textarea-bg {
@@ -97928,8 +98021,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .group:hover .lg\:group-hover\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .lg\:group-hover\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .group:hover .lg\:group-hover\:bg-textarea-bg {
@@ -98360,8 +98454,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .lg\:focus-within\:bg-button-color:focus-within {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus-within\:bg-tipButton:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .lg\:focus-within\:bg-textarea-bg:focus-within {
@@ -98792,8 +98887,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .lg\:hover\:bg-button-color:hover {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:hover\:bg-tipButton:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .lg\:hover\:bg-textarea-bg:hover {
@@ -99224,8 +99320,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .lg\:focus\:bg-button-color:focus {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:bg-tipButton:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .lg\:focus\:bg-textarea-bg:focus {
@@ -99272,6 +99369,10 @@ body {
 
   .lg\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .lg\:bg-gradient {
+    background-image: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
   }
 
   .lg\:from-transparent {
@@ -99694,9 +99795,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .lg\:from-button-color {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .lg\:from-tipButton {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .lg\:from-textarea-bg {
@@ -100045,8 +100146,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .lg\:via-button-color {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .lg\:via-tipButton {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .lg\:via-textarea-bg {
@@ -100393,8 +100494,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .lg\:to-button-color {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:to-tipButton {
+    --tw-gradient-to: #313D4D;
   }
 
   .lg\:to-textarea-bg {
@@ -100825,9 +100926,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .lg\:hover\:from-button-color:hover {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .lg\:hover\:from-tipButton:hover {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .lg\:hover\:from-textarea-bg:hover {
@@ -101176,8 +101277,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .lg\:hover\:via-button-color:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .lg\:hover\:via-tipButton:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .lg\:hover\:via-textarea-bg:hover {
@@ -101524,8 +101625,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .lg\:hover\:to-button-color:hover {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:hover\:to-tipButton:hover {
+    --tw-gradient-to: #313D4D;
   }
 
   .lg\:hover\:to-textarea-bg:hover {
@@ -101956,9 +102057,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .lg\:focus\:from-button-color:focus {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .lg\:focus\:from-tipButton:focus {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .lg\:focus\:from-textarea-bg:focus {
@@ -102307,8 +102408,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .lg\:focus\:via-button-color:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .lg\:focus\:via-tipButton:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .lg\:focus\:via-textarea-bg:focus {
@@ -102655,8 +102756,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .lg\:focus\:to-button-color:focus {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:to-tipButton:focus {
+    --tw-gradient-to: #313D4D;
   }
 
   .lg\:focus\:to-textarea-bg:focus {
@@ -103465,8 +103566,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .lg\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .lg\:border-textarea-bg {
@@ -103897,8 +103999,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .group:hover .lg\:group-hover\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .lg\:group-hover\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .group:hover .lg\:group-hover\:border-textarea-bg {
@@ -104329,8 +104432,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .lg\:focus-within\:border-button-color:focus-within {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus-within\:border-tipButton:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .lg\:focus-within\:border-textarea-bg:focus-within {
@@ -104761,8 +104865,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .lg\:hover\:border-button-color:hover {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:hover\:border-tipButton:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .lg\:hover\:border-textarea-bg:hover {
@@ -105193,8 +105298,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .lg\:focus\:border-button-color:focus {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:border-tipButton:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .lg\:focus\:border-textarea-bg:focus {
@@ -112052,16 +112158,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .lg\:placeholder-button-color::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:placeholder-tipButton::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .lg\:placeholder-button-color:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:placeholder-tipButton:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .lg\:placeholder-button-color::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:placeholder-tipButton::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .lg\:placeholder-textarea-bg::-webkit-input-placeholder {
@@ -113348,16 +113457,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .lg\:focus\:placeholder-button-color:focus::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:placeholder-tipButton:focus::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .lg\:focus\:placeholder-button-color:focus:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:placeholder-tipButton:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .lg\:focus\:placeholder-button-color:focus::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:placeholder-tipButton:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-textarea-bg:focus::-webkit-input-placeholder {
@@ -117256,8 +117368,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .lg\:ring-offset-button-color {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:ring-offset-tipButton {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .lg\:ring-offset-textarea-bg {
@@ -117604,8 +117716,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .lg\:focus-within\:ring-offset-button-color:focus-within {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus-within\:ring-offset-tipButton:focus-within {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .lg\:focus-within\:ring-offset-textarea-bg:focus-within {
@@ -117952,8 +118064,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .lg\:focus\:ring-offset-button-color:focus {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:ring-offset-tipButton:focus {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .lg\:focus\:ring-offset-textarea-bg:focus {
@@ -118442,8 +118554,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .lg\:ring-button-color {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:ring-tipButton {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .lg\:ring-textarea-bg {
@@ -118874,8 +118987,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .lg\:focus-within\:ring-button-color:focus-within {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus-within\:ring-tipButton:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .lg\:focus-within\:ring-textarea-bg:focus-within {
@@ -119306,8 +119420,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .lg\:focus\:ring-button-color:focus {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:ring-tipButton:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .lg\:focus\:ring-textarea-bg:focus {
@@ -119962,8 +120077,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .lg\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .lg\:text-textarea-bg {
@@ -120394,8 +120510,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .group:hover .lg\:group-hover\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .lg\:group-hover\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:text-textarea-bg {
@@ -120826,8 +120943,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .lg\:focus-within\:text-button-color:focus-within {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus-within\:text-tipButton:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .lg\:focus-within\:text-textarea-bg:focus-within {
@@ -121258,8 +121376,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .lg\:hover\:text-button-color:hover {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:hover\:text-tipButton:hover {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .lg\:hover\:text-textarea-bg:hover {
@@ -121690,8 +121809,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .lg\:focus\:text-button-color:focus {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .lg\:focus\:text-tipButton:focus {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .lg\:focus\:text-textarea-bg:focus {
@@ -128477,8 +128597,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
-  .xl\:divide-button-color > :not([hidden]) ~ :not([hidden]) {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:divide-tipButton > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
   .xl\:divide-textarea-bg > :not([hidden]) ~ :not([hidden]) {
@@ -129093,8 +129214,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .xl\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .xl\:bg-textarea-bg {
@@ -129525,8 +129647,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .group:hover .xl\:group-hover\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .xl\:group-hover\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .group:hover .xl\:group-hover\:bg-textarea-bg {
@@ -129957,8 +130080,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .xl\:focus-within\:bg-button-color:focus-within {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus-within\:bg-tipButton:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .xl\:focus-within\:bg-textarea-bg:focus-within {
@@ -130389,8 +130513,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .xl\:hover\:bg-button-color:hover {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:hover\:bg-tipButton:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .xl\:hover\:bg-textarea-bg:hover {
@@ -130821,8 +130946,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .xl\:focus\:bg-button-color:focus {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:bg-tipButton:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .xl\:focus\:bg-textarea-bg:focus {
@@ -130869,6 +130995,10 @@ body {
 
   .xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .xl\:bg-gradient {
+    background-image: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
   }
 
   .xl\:from-transparent {
@@ -131291,9 +131421,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .xl\:from-button-color {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .xl\:from-tipButton {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .xl\:from-textarea-bg {
@@ -131642,8 +131772,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .xl\:via-button-color {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .xl\:via-tipButton {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .xl\:via-textarea-bg {
@@ -131990,8 +132120,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .xl\:to-button-color {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:to-tipButton {
+    --tw-gradient-to: #313D4D;
   }
 
   .xl\:to-textarea-bg {
@@ -132422,9 +132552,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .xl\:hover\:from-button-color:hover {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .xl\:hover\:from-tipButton:hover {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .xl\:hover\:from-textarea-bg:hover {
@@ -132773,8 +132903,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .xl\:hover\:via-button-color:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .xl\:hover\:via-tipButton:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .xl\:hover\:via-textarea-bg:hover {
@@ -133121,8 +133251,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .xl\:hover\:to-button-color:hover {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:hover\:to-tipButton:hover {
+    --tw-gradient-to: #313D4D;
   }
 
   .xl\:hover\:to-textarea-bg:hover {
@@ -133553,9 +133683,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .xl\:focus\:from-button-color:focus {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .xl\:focus\:from-tipButton:focus {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .xl\:focus\:from-textarea-bg:focus {
@@ -133904,8 +134034,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .xl\:focus\:via-button-color:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .xl\:focus\:via-tipButton:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .xl\:focus\:via-textarea-bg:focus {
@@ -134252,8 +134382,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .xl\:focus\:to-button-color:focus {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:to-tipButton:focus {
+    --tw-gradient-to: #313D4D;
   }
 
   .xl\:focus\:to-textarea-bg:focus {
@@ -135062,8 +135192,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .xl\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .xl\:border-textarea-bg {
@@ -135494,8 +135625,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .group:hover .xl\:group-hover\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .xl\:group-hover\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .group:hover .xl\:group-hover\:border-textarea-bg {
@@ -135926,8 +136058,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .xl\:focus-within\:border-button-color:focus-within {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus-within\:border-tipButton:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .xl\:focus-within\:border-textarea-bg:focus-within {
@@ -136358,8 +136491,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .xl\:hover\:border-button-color:hover {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:hover\:border-tipButton:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .xl\:hover\:border-textarea-bg:hover {
@@ -136790,8 +136924,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .xl\:focus\:border-button-color:focus {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:border-tipButton:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .xl\:focus\:border-textarea-bg:focus {
@@ -143649,16 +143784,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .xl\:placeholder-button-color::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:placeholder-tipButton::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .xl\:placeholder-button-color:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:placeholder-tipButton:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .xl\:placeholder-button-color::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:placeholder-tipButton::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .xl\:placeholder-textarea-bg::-webkit-input-placeholder {
@@ -144945,16 +145083,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .xl\:focus\:placeholder-button-color:focus::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:placeholder-tipButton:focus::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .xl\:focus\:placeholder-button-color:focus:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:placeholder-tipButton:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .xl\:focus\:placeholder-button-color:focus::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:placeholder-tipButton:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-textarea-bg:focus::-webkit-input-placeholder {
@@ -148853,8 +148994,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .xl\:ring-offset-button-color {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:ring-offset-tipButton {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .xl\:ring-offset-textarea-bg {
@@ -149201,8 +149342,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .xl\:focus-within\:ring-offset-button-color:focus-within {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus-within\:ring-offset-tipButton:focus-within {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .xl\:focus-within\:ring-offset-textarea-bg:focus-within {
@@ -149549,8 +149690,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .xl\:focus\:ring-offset-button-color:focus {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:ring-offset-tipButton:focus {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .xl\:focus\:ring-offset-textarea-bg:focus {
@@ -150039,8 +150180,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .xl\:ring-button-color {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:ring-tipButton {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .xl\:ring-textarea-bg {
@@ -150471,8 +150613,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .xl\:focus-within\:ring-button-color:focus-within {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus-within\:ring-tipButton:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .xl\:focus-within\:ring-textarea-bg:focus-within {
@@ -150903,8 +151046,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .xl\:focus\:ring-button-color:focus {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:ring-tipButton:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .xl\:focus\:ring-textarea-bg:focus {
@@ -151559,8 +151703,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .xl\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .xl\:text-textarea-bg {
@@ -151991,8 +152136,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .group:hover .xl\:group-hover\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .xl\:group-hover\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .group:hover .xl\:group-hover\:text-textarea-bg {
@@ -152423,8 +152569,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .xl\:focus-within\:text-button-color:focus-within {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus-within\:text-tipButton:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .xl\:focus-within\:text-textarea-bg:focus-within {
@@ -152855,8 +153002,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .xl\:hover\:text-button-color:hover {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:hover\:text-tipButton:hover {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .xl\:hover\:text-textarea-bg:hover {
@@ -153287,8 +153435,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .xl\:focus\:text-button-color:focus {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .xl\:focus\:text-tipButton:focus {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .xl\:focus\:text-textarea-bg:focus {
@@ -160074,8 +160223,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-divide-opacity));
   }
 
-  .\32xl\:divide-button-color > :not([hidden]) ~ :not([hidden]) {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:divide-tipButton > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-divide-opacity));
   }
 
   .\32xl\:divide-textarea-bg > :not([hidden]) ~ :not([hidden]) {
@@ -160690,8 +160840,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .\32xl\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .\32xl\:bg-textarea-bg {
@@ -161122,8 +161273,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .group:hover .\32xl\:group-hover\:bg-button-color {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .\32xl\:group-hover\:bg-tipButton {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:bg-textarea-bg {
@@ -161554,8 +161706,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .\32xl\:focus-within\:bg-button-color:focus-within {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus-within\:bg-tipButton:focus-within {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus-within\:bg-textarea-bg:focus-within {
@@ -161986,8 +162139,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .\32xl\:hover\:bg-button-color:hover {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:hover\:bg-tipButton:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .\32xl\:hover\:bg-textarea-bg:hover {
@@ -162418,8 +162572,9 @@ body {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
-  .\32xl\:focus\:bg-button-color:focus {
-    background-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:bg-tipButton:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 61, 77, var(--tw-bg-opacity));
   }
 
   .\32xl\:focus\:bg-textarea-bg:focus {
@@ -162466,6 +162621,10 @@ body {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-gradient {
+    background-image: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
   }
 
   .\32xl\:from-transparent {
@@ -162888,9 +163047,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .\32xl\:from-button-color {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .\32xl\:from-tipButton {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .\32xl\:from-textarea-bg {
@@ -163239,8 +163398,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .\32xl\:via-button-color {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .\32xl\:via-tipButton {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .\32xl\:via-textarea-bg {
@@ -163587,8 +163746,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .\32xl\:to-button-color {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:to-tipButton {
+    --tw-gradient-to: #313D4D;
   }
 
   .\32xl\:to-textarea-bg {
@@ -164019,9 +164178,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .\32xl\:hover\:from-button-color:hover {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .\32xl\:hover\:from-tipButton:hover {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .\32xl\:hover\:from-textarea-bg:hover {
@@ -164370,8 +164529,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .\32xl\:hover\:via-button-color:hover {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .\32xl\:hover\:via-tipButton:hover {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .\32xl\:hover\:via-textarea-bg:hover {
@@ -164718,8 +164877,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .\32xl\:hover\:to-button-color:hover {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:hover\:to-tipButton:hover {
+    --tw-gradient-to: #313D4D;
   }
 
   .\32xl\:hover\:to-textarea-bg:hover {
@@ -165150,9 +165309,9 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .\32xl\:focus\:from-button-color:focus {
-    --tw-gradient-from: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
-    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .\32xl\:focus\:from-tipButton:focus {
+    --tw-gradient-from: #313D4D;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .\32xl\:focus\:from-textarea-bg:focus {
@@ -165501,8 +165660,8 @@ body {
     --tw-gradient-stops: var(--tw-gradient-from), #831843, var(--tw-gradient-to, rgba(131, 24, 67, 0));
   }
 
-  .\32xl\:focus\:via-button-color:focus {
-    --tw-gradient-stops: var(--tw-gradient-from), linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%), var(--tw-gradient-to, rgba(255, 255, 255, 0));
+  .\32xl\:focus\:via-tipButton:focus {
+    --tw-gradient-stops: var(--tw-gradient-from), #313D4D, var(--tw-gradient-to, rgba(49, 61, 77, 0));
   }
 
   .\32xl\:focus\:via-textarea-bg:focus {
@@ -165849,8 +166008,8 @@ body {
     --tw-gradient-to: #831843;
   }
 
-  .\32xl\:focus\:to-button-color:focus {
-    --tw-gradient-to: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:to-tipButton:focus {
+    --tw-gradient-to: #313D4D;
   }
 
   .\32xl\:focus\:to-textarea-bg:focus {
@@ -166659,8 +166818,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .\32xl\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .\32xl\:border-textarea-bg {
@@ -167091,8 +167251,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .group:hover .\32xl\:group-hover\:border-button-color {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .\32xl\:group-hover\:border-tipButton {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:border-textarea-bg {
@@ -167523,8 +167684,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .\32xl\:focus-within\:border-button-color:focus-within {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus-within\:border-tipButton:focus-within {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .\32xl\:focus-within\:border-textarea-bg:focus-within {
@@ -167955,8 +168117,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .\32xl\:hover\:border-button-color:hover {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:hover\:border-tipButton:hover {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .\32xl\:hover\:border-textarea-bg:hover {
@@ -168387,8 +168550,9 @@ body {
     border-color: rgba(131, 24, 67, var(--tw-border-opacity));
   }
 
-  .\32xl\:focus\:border-button-color:focus {
-    border-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:border-tipButton:focus {
+    --tw-border-opacity: 1;
+    border-color: rgba(49, 61, 77, var(--tw-border-opacity));
   }
 
   .\32xl\:focus\:border-textarea-bg:focus {
@@ -175246,16 +175410,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:placeholder-button-color::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:placeholder-tipButton::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:placeholder-button-color:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:placeholder-tipButton:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:placeholder-button-color::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:placeholder-tipButton::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:placeholder-textarea-bg::-webkit-input-placeholder {
@@ -176542,16 +176709,19 @@ body {
     color: rgba(131, 24, 67, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:focus\:placeholder-button-color:focus::-webkit-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:placeholder-tipButton:focus::-webkit-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:focus\:placeholder-button-color:focus:-ms-input-placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:placeholder-tipButton:focus:-ms-input-placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
-  .\32xl\:focus\:placeholder-button-color:focus::placeholder {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:placeholder-tipButton:focus::placeholder {
+    --tw-placeholder-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-placeholder-opacity));
   }
 
   .\32xl\:focus\:placeholder-textarea-bg:focus::-webkit-input-placeholder {
@@ -180450,8 +180620,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .\32xl\:ring-offset-button-color {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:ring-offset-tipButton {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .\32xl\:ring-offset-textarea-bg {
@@ -180798,8 +180968,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .\32xl\:focus-within\:ring-offset-button-color:focus-within {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus-within\:ring-offset-tipButton:focus-within {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .\32xl\:focus-within\:ring-offset-textarea-bg:focus-within {
@@ -181146,8 +181316,8 @@ body {
     --tw-ring-offset-color: #831843;
   }
 
-  .\32xl\:focus\:ring-offset-button-color:focus {
-    --tw-ring-offset-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:ring-offset-tipButton:focus {
+    --tw-ring-offset-color: #313D4D;
   }
 
   .\32xl\:focus\:ring-offset-textarea-bg:focus {
@@ -181636,8 +181806,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .\32xl\:ring-button-color {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:ring-tipButton {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .\32xl\:ring-textarea-bg {
@@ -182068,8 +182239,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .\32xl\:focus-within\:ring-button-color:focus-within {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus-within\:ring-tipButton:focus-within {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus-within\:ring-textarea-bg:focus-within {
@@ -182500,8 +182672,9 @@ body {
     --tw-ring-color: rgba(131, 24, 67, var(--tw-ring-opacity));
   }
 
-  .\32xl\:focus\:ring-button-color:focus {
-    --tw-ring-color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:ring-tipButton:focus {
+    --tw-ring-opacity: 1;
+    --tw-ring-color: rgba(49, 61, 77, var(--tw-ring-opacity));
   }
 
   .\32xl\:focus\:ring-textarea-bg:focus {
@@ -183156,8 +183329,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .\32xl\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .\32xl\:text-textarea-bg {
@@ -183588,8 +183762,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .group:hover .\32xl\:group-hover\:text-button-color {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .group:hover .\32xl\:group-hover\:text-tipButton {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .group:hover .\32xl\:group-hover\:text-textarea-bg {
@@ -184020,8 +184195,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .\32xl\:focus-within\:text-button-color:focus-within {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus-within\:text-tipButton:focus-within {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .\32xl\:focus-within\:text-textarea-bg:focus-within {
@@ -184452,8 +184628,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .\32xl\:hover\:text-button-color:hover {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:hover\:text-tipButton:hover {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .\32xl\:hover\:text-textarea-bg:hover {
@@ -184884,8 +185061,9 @@ body {
     color: rgba(131, 24, 67, var(--tw-text-opacity));
   }
 
-  .\32xl\:focus\:text-button-color:focus {
-    color: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
+  .\32xl\:focus\:text-tipButton:focus {
+    --tw-text-opacity: 1;
+    color: rgba(49, 61, 77, var(--tw-text-opacity));
   }
 
   .\32xl\:focus\:text-textarea-bg:focus {

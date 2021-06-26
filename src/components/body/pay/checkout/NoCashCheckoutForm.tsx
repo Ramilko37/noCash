@@ -84,6 +84,7 @@ export default function NoCashCheckoutForm() {
 
 
             <button
+                className="bg-green-500"
                 disabled={processing || disabled || succeeded}
                 id="submit"
             >

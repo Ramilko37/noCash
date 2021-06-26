@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import TipButton from "./tip-button/TipButton";
 import TipInput from "./tip-input/TipInput";
 import Rate from "../review/rate/Rate";
@@ -13,6 +13,7 @@ import CardPayButton from "../pay/CardPayButton";
 
 const amountList = [5, 10, 15, 20]
 
+
 const stripePromise = loadStripe('pk_test_51IxSuWLkp54pVwNHVSlpuWCEyw2aQa8beEYD1DKb351afWkTHdf9NPUnFxALJNXaNy6drLvBRJFRBc6PGGw5Q7SR00qpa6RPR2');
 
 const Tip: React.FC<{}> = () => {
@@ -22,6 +23,7 @@ const Tip: React.FC<{}> = () => {
         setAmount(a)
     }
 
+    // @ts-ignore
     return (
         step === 0
 
@@ -36,7 +38,7 @@ const Tip: React.FC<{}> = () => {
                 <div className="m-20 mt-2 mb-6 max-w-max flex flex-col justify-center mx-auto">
                     <TipInput handleAmount={handleAmount} amount={amount}/>
                     <div className="flex mt-4">
-                        {amountList.map(e => <TipButton handleAmount={handleAmount} amount={e} key={e}/>)}
+                        {amountList.map(e => <TipButton bgColor={e === amount ? 'gradient' : 'tipButton'} handleAmount={handleAmount} amount={e} key={e}/>)}
                     </div>
                 </div>
                 <Rate/>
