@@ -63,15 +63,15 @@ export default function NoCashCheckoutForm() {
     }
     return (
         <form id="payment-form" onSubmit={handleSubmit}
-              className="flex flex-col items-start space-y-6 text-gray-300">
-            <div className="w-full">
+              className="flex flex-col items-start space-y-6 text-gray-300 w-3/4">
+            <div className="w-72">
                 <label>
                     Card Number:
                     <CardNumberElement id="card-number" options={{style}} onChange={handleChange}/>
                 </label>
 
             </div>
-            <div className="flex space-x-12 w-full">
+            <div className="flex space-x-12 w-72">
                 <label>
                     Expiry Date:
                     <CardExpiryElement options={{style}} id="card-expiry"/>
@@ -84,7 +84,7 @@ export default function NoCashCheckoutForm() {
 
 
             <button
-                className="bg-green-500"
+                className="bg-green-500 w-72"
                 disabled={processing || disabled || succeeded}
                 id="submit"
             >
