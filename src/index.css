@@ -32344,6 +32344,19 @@ video {
   background: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)
 }
 
+.outline-zero {
+  outline-width: 0px;
+}
+
+.button-dft {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  border-radius: 0;
+  background: #ccc;
+}
+
 body {
   background: rgb(31 42 56);
 }
