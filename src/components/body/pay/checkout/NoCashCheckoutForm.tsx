@@ -63,7 +63,7 @@ export default function NoCashCheckoutForm() {
     }
     return (
         <form id="payment-form" onSubmit={handleSubmit}
-              className="flex flex-col items-start space-y-6 text-gray-300 w-3/4">
+              className="flex flex-col text-gray-300 p-0 w-72 justify-center mx-auto">
             <div className="w-72">
                 <label>
                     Card Number:
@@ -84,7 +84,7 @@ export default function NoCashCheckoutForm() {
 
 
             <button
-                className="bg-green-500 w-72"
+                className="gradient-btn-color w-72"
                 disabled={processing || disabled || succeeded}
                 id="submit"
             >

@@ -75,16 +75,16 @@ const Tip: React.FC<{}> = () => {
         lg:h-full lg:w-3/4
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
-        mt-4 flex-col
+        mt-4 flex-col justify-center
         ">
 
-                <div className="flex justify-center w-75 mt-36">
-                    <div className="flex justify-center">
+                {/*<div className="flex justify-center w-75 mt-36">*/}
+                {/*    <div className="flex justify-center">*/}
                         <Elements stripe={stripePromise}>
                             <NoCashCheckoutForm/>
                         </Elements>
-                    </div>
-                </div>
+                    {/*</div>*/}
+
             </div>
     )
 }
