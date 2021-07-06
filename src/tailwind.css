@@ -57,4 +57,31 @@ body {
         background: #ccc;
     }
 
+    .form-p {
+        padding: 26px 20px 26px 19px;
+    }
+
+    .form-bg {
+        background: #273040;
+    }
+
+    .form-input-bg {
+        background: #313D4D;
+    }
+
+    .form-input-h {
+        height: 33px;
+    }
+
+    .form-input-year {
+        width: 106px;
+    }
+
+    .form-input-cvc {
+        width: 88px;
+    }
+
+    .color-gold {
+        color: #DFAF3F;;
+    }
 }
