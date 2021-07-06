@@ -12,7 +12,7 @@ const Body: React.FC = () =>
 
     <div className="container bg-gray-700 rounded-large sm:max-w-screen-lg md:max-w-screen-xl flex-col lg:flex md:flex-row sm:flex-col pb-6">
         <Switch>
-            <Route exact path="/1">
+            <Route exact path="/:uuid">
                 <Customer />
                 <Tip/>
             </Route>
