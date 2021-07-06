@@ -62,9 +62,9 @@ export default function NoCashCheckoutForm() {
             }
     }
     return (
-        <div className="flex-col justify-center">
+        <div className="flex-col justify-center w-72 sm:w-90 md:w-3/4 mx-auto border-red-800">
             <form id="payment-form" onSubmit={handleSubmit}
-                  className="flex flex-col text-gray-300 p-0 w-72 justify-center mx-auto md:mt-10 form-p form-bg">
+                  className="flex flex-col text-gray-300 p-0 w-full justify-center mx-auto md:mt-10 form-p form-bg">
                 <div className="w-64 h-14 sm:w-3/4 mb-5">
                     <label className="text-xs">
                         Card Number:
@@ -101,11 +101,11 @@ export default function NoCashCheckoutForm() {
                     </a> Refresh the page to pay again.
                 </p>
             </form>
-            <p className="text-xs mx-auto w-72 mt-3 color-gold">
+            <p className="text-xs mx-auto w-full mt-3 color-gold">
                 The bank card data will be transmitted in a fixed form
             </p>
             <button
-                className="gradient-btn-color w-56 md:w-72 justify-center mx-auto mt-3 w-72"
+                className="gradient-btn-color w-full justify-center mx-auto mt-3 w-72"
                 disabled={processing || disabled || succeeded}
                 id="submit"
             >
