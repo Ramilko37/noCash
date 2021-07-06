@@ -18,7 +18,7 @@ export default function NoCashCheckoutForm() {
 
     useEffect(() => {
         axios
-            .post("http://localhost:8083/payment", {
+            .post("https://quiet-platform-317414.uc.r.appspot.com/payment", {
                 amount: 1000
             })
             .then((response) => {
