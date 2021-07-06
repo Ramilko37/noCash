@@ -32399,6 +32399,10 @@ input[type=number] {
   color: #DFAF3F;
 }
 
+.pay-form-bg {
+  color: #1C2632;
+}
+
 body {
   background: rgb(31 42 56);
 }

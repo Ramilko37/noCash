@@ -62,7 +62,7 @@ export default function NoCashCheckoutForm() {
             }
     }
     return (
-        <div className="flex-col justify-center w-72 sm:w-90 md:w-3/4 mx-auto border-red-800">
+        <div className="flex-col justify-center w-72 sm:w-90 md:w-3/4 mx-auto pay-form-bg">
             <form id="payment-form" onSubmit={handleSubmit}
                   className="flex flex-col text-gray-300 p-0 w-full justify-center mx-auto md:mt-10 form-p form-bg">
                 <div className="w-64 h-14 sm:w-3/4 mb-5">
