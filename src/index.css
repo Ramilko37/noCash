@@ -32403,6 +32403,13 @@ input[type=number] {
   color: #1C2632;
 }
 
+.tip-btn-font {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+
 body {
   background: rgb(31 42 56);
 }
