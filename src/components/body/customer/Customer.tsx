@@ -40,10 +40,10 @@ const Customer: React.FC = () => {
         />
         <div className="flex flex-col m-0">
             <span className="text-2xl text-white">
-               Ramil Galyamdin
+               {customer.name}
             </span>
             <span className="text-lg text-gray-300">
-            Cosmo Trooper
+            {customer.place}
             </span>
         </div>
 
