@@ -32414,6 +32414,10 @@ input[type=number] {
   border-radius: 25px;
 }
 
+.radio-btn-border {
+  border: 2px solid gray;
+}
+
 body {
   background: rgb(31 42 56);
 }

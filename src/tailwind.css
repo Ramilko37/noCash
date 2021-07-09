@@ -99,4 +99,8 @@ body {
     .customer-rounded {
         border-radius: 25px;
     }
+
+    .radio-btn-border {
+        border: 2px solid gray;
+    }
 }
