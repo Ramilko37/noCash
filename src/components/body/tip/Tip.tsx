@@ -35,7 +35,7 @@ const Tip: React.FC<{}> = () => {
         sm:h-3/4 sm:w-full
         mt-10
         ">
-                <div className="m-20 mt-2 mb-6 max-w-max flex flex-col justify-center mx-auto">
+                <div className="m-20 mt-2 mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
                     <TipInput handleAmount={handleAmount} amount={amount}/>
                     <div className="flex mt-4">
                         {amountList.map(e => <TipButton bgColor={e === amount ? 'gradient' : 'tipButton'} handleAmount={handleAmount} amount={e} key={e}/>)}
@@ -53,12 +53,12 @@ const Tip: React.FC<{}> = () => {
                         <label htmlFor="radio7" className="flex items-center cursor-pointer">
                             <RadioButton id={'radio7'}
                                          content={''}/>
-                            <p className="text-sm max-w-md">I want to cover transaction costs (5% от суммы чаевых €) so that the employee receives the full amount</p>
+                            <p className="text-xs max-w-md">I want to cover transaction costs (5% of the tip amount) so that the employee receives the full amount</p>
                         </label>
                     </div>
 
                 </div>
-                <div className="w-72 flex-col md:flex mx-auto lg:w-4/5 lg:justify-center    lg:flex md:flex-row sm:flex-col mt-4">
+                <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">
                     <ApplePayButton />
                     <CardPayButton handleStep={() => setStep(1)}/>
                 </div>
