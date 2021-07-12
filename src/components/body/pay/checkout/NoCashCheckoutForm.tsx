@@ -68,18 +68,18 @@ export default function NoCashCheckoutForm() {
                 <div className="w-64 h-14 sm:w-3/4 mb-5">
                     <label className="text-xs">
                         Card Number:
-                        <CardNumberElement className="form-input-bg form-input-h" id="card-number" options={{style}} onChange={handleChange}/>
+                        <CardNumberElement className="form-input-bg form-input-h" id="card-number" options={{placeholder:'0000 0000 0000 0000',style}} onChange={handleChange}/>
                     </label>
 
                 </div>
                 <div className="flex space-x-12 w-72">
                     <label className="text-xs">
                         Expiry Date:
-                        <CardExpiryElement className="form-input-year form-input-bg form-input-h" options={{style}} id="card-expiry"/>
+                        <CardExpiryElement className="form-input-year form-input-bg form-input-h" options={{placeholder:'00/00',style}} id="card-expiry"/>
                     </label>
                     <label className="text-xs">
                         CVC:
-                        <CardCvcElement className="form-input-cvc form-input-bg w-16 form-input-h text-sm" options={{style}} id="card-cvc"/>
+                        <CardCvcElement className="form-input-cvc form-input-bg w-16 form-input-h text-sm" options={{placeholder:'000', style}} id="card-cvc"/>
                     </label>
                 </div>
 
