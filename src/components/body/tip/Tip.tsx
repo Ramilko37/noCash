@@ -16,12 +16,14 @@ const amountList = [5, 10, 15, 20]
 
 const stripePromise = loadStripe('pk_test_51IxSuWLkp54pVwNHVSlpuWCEyw2aQa8beEYD1DKb351afWkTHdf9NPUnFxALJNXaNy6drLvBRJFRBc6PGGw5Q7SR00qpa6RPR2');
 
-const Tip: React.FC<{}> = () => {
-    let [amount, setAmount] = React.useState(5)
-    let [step, setStep] = React.useState(0)
-    const handleAmount = (a: number) => {
-        setAmount(a)
-    }
+interface IProps {
+    step: number
+    handleStep: (e: number) => void
+    amount: number
+    handleAmount: (e: number) => void
+}
+
+const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
 
     // @ts-ignore
     return (
@@ -60,7 +62,7 @@ const Tip: React.FC<{}> = () => {
                 </div>
                 <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">
                     <ApplePayButton />
-                    <CardPayButton handleStep={() => setStep(1)}/>
+                    <CardPayButton handleStep={() => handleStep(1)}/>
                 </div>
 
                     <p className="max-w-md text-center text-white mx-auto mt-4 mb-10 text-xs">By making a payment, you agree to the terms of the NoCash service</p>
