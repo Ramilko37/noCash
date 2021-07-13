@@ -65,8 +65,9 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
                     <CardPayButton handleStep={() => handleStep(1)}/>
                 </div>
 
-                    <p className="max-w-md text-center text-white mx-auto mt-4 mb-10 text-xs">By making a payment, you agree to the terms <br/> of the NoCash service</p>
-
+                <p className="w-60 text-center text-white mx-auto mt-4 mb-10 text-xs whitespace-pre-wrap">By making a payment,
+                    you agree to the <a
+                        href="#" className="underline">terms of the NoCash service</a></p>
 
 
             </div>

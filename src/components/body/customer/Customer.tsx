@@ -33,7 +33,6 @@ const Customer: React.FC = () => {
     lg:flex-col md:flex-row sm:flex-row
     space-y-6
     space-x-6
-    mt-10
     customer-rounded
     mx-auto
     ">
