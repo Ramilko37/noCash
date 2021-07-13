@@ -65,7 +65,7 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
                     <CardPayButton handleStep={() => handleStep(1)}/>
                 </div>
 
-                    <p className="max-w-md text-center text-white mx-auto mt-4 mb-10 text-xs">By making a payment, you agree to the terms of the NoCash service</p>
+                    <p className="max-w-md text-center text-white mx-auto mt-4 mb-10 text-xs">By making a payment, you agree to the terms <br/> of the NoCash service</p>
 
 
 
@@ -83,7 +83,7 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
                 {/*<div className="flex justify-center w-75 mt-36">*/}
                 {/*    <div className="flex justify-center">*/}
                         <Elements stripe={stripePromise}>
-                            <NoCashCheckoutForm/>
+                            <NoCashCheckoutForm amount={amount}/>
                         </Elements>
                     {/*</div>*/}
 

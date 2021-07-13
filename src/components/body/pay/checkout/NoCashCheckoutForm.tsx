@@ -7,7 +7,14 @@ import './NoCashCheckoutForm.css';
 import {ConfirmCardPaymentData} from "@stripe/stripe-js";
 import axios from "axios";
 
-export default function NoCashCheckoutForm() {
+interface IProps {
+    step?: number
+    handleStep?: (e: number) => void
+    amount?: number
+    handleAmount?: (e: number) => void
+}
+
+const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
     const [succeeded, setSucceeded] = useState(false);
     const [error, setError] = useState('');
     const [processing, setProcessing] = useState(false);
@@ -19,7 +26,7 @@ export default function NoCashCheckoutForm() {
     useEffect(() => {
         axios
             .post("https://quiet-platform-317414.uc.r.appspot.com/payment", {
-                amount: 1000
+                amount: amount
             })
             .then((response) => {
                 console.log("Response: ", response);
@@ -121,3 +128,5 @@ export default function NoCashCheckoutForm() {
 
     );
 }
+
+export default NoCashCheckoutForm
