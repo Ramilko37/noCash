@@ -35,9 +35,9 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
         lg:h-full lg:w-3/4
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
-        mt-10
+
         ">
-                <div className="m-20 mt-2 mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
+                <div className="mt-2 sm:mt-6 mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
                     <TipInput handleAmount={handleAmount} amount={amount}/>
                     <div className="flex mt-4">
                         {amountList.map(e => <TipButton bgColor={e === amount ? 'gradient' : 'tipButton'} handleAmount={handleAmount} amount={e} key={e}/>)}

@@ -47,6 +47,7 @@ button {
     border-radius: 26px;
     width: 100%;
     height: 44px;
+    background: linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%);
     color: #ffffff;
     font-family: Arial, sans-serif;
     border: 0;
@@ -63,6 +64,9 @@ button:hover {
 }
 button:disabled {
     cursor: default;
+    background: linear-gradient(90deg, darkgray 0%, dimgrey 100%);
+
+
 }
 /* spinner/processing state, errors */
 .spinner,

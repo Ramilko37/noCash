@@ -26,7 +26,6 @@ const Customer: React.FC = () => {
     w-full
     lg:w-2/5
     lg:max-h-full
-    mt-10
     items-start
     border-solid shadow-2xl
     flex flex-row-reverse

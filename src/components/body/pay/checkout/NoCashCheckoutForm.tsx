@@ -20,6 +20,8 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
     const [processing, setProcessing] = useState(false);
     const [disabled, setDisabled] = useState(true);
     const [clientSecret, setClientSecret] = useState('');
+    const [activeButton, setActiveButton] = useState(0);
+
     const stripe = useStripe();
     const elements = useElements();
 
@@ -71,7 +73,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
     return (
         <div className="flex-col justify-center w-72 sm:w-90 md:w-3/4 mx-auto pay-form-bg">
             <form id="payment-form" onSubmit={handleSubmit}
-                  className="flex flex-col text-gray-300 p-0 w-full justify-center mx-auto md:mt-10 form-p form-bg">
+                  className="flex flex-col text-gray-300 p-0 w-full justify-center mx-auto md:mt-10 form-p form-bg" aria-required={true}>
                 <div className="w-64 h-14 sm:w-3/4 mb-5">
                     <label className="text-xs">
                         Card Number:
@@ -112,11 +114,11 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                 The bank card data will be transmitted in a fixed form
             </p>
             <button
-                className="gradient-btn-color w-full justify-center mx-auto mt-3 w-72"
-                disabled={processing || disabled || succeeded}
+                className="w-full justify-center mx-auto mt-3 w-72"
+                disabled={ processing || disabled || succeeded }
                 id="submit"
             >
-            <span id="button-text">
+            <span id="button-text" >
               {processing ? (
                   <div className="spinner" id="spinner"/>
               ) : (
