@@ -11,6 +11,7 @@ import RadioButton from "../review/radiobuttons/RadioButton";
 import ApplePayButton from "../pay/ApplePayButton";
 import CardPayButton from "../pay/CardPayButton";
 
+
 const amountList = [5, 10, 15, 20]
 
 

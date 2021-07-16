@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Input: React.FC = () =>
     <div className="w-72 sm:w-3/6 h-11 md:h-28 flex-col justify-center mb-1 text-xs space-y-2 mx-auto ">
         <textarea name="message" id=""

@@ -4,8 +4,10 @@ import {
     useElements, CardNumberElement, CardExpiryElement, CardCvcElement
 } from "@stripe/react-stripe-js";
 import './NoCashCheckoutForm.css';
+import '../../tip/InputMask.css';
 import {ConfirmCardPaymentData} from "@stripe/stripe-js";
 import axios from "axios";
+import InputMask from "react-input-mask";
 
 interface IProps {
     step?: number
@@ -77,7 +79,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                 <div className="w-64 h-14 sm:w-3/4 mb-5">
                     <label className="text-xs">
                         Card Number:
-                        <CardNumberElement className="form-input-bg form-input-h" id="card-number" options={{placeholder:'0000 0000 0000 0000',style}} onChange={handleChange}/>
+                        <CardNumberElement className="form-input-bg form-input-h" id="card-number" options={{placeholder:'0000 0000 0000 0000',style}} onChange={handleChange} />
                     </label>
 
                 </div>
@@ -109,15 +111,11 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                         Stripe dashboard.
                     </a> Refresh the page to pay again.
                 </p>
-            </form>
-            <p className="text-xs mx-auto w-full mt-3 color-gold">
-                The bank card data will be transmitted in a fixed form
-            </p>
-            <button
-                className="w-full justify-center mx-auto mt-3 w-72"
-                disabled={ processing || disabled || succeeded }
-                id="submit"
-            >
+                <button
+                    className="w-full justify-center mx-auto mt-3 w-72"
+                    disabled={ processing || disabled || succeeded } onClick={()=>{console.log('!!!!')}}
+                    id="submit"
+                >
             <span id="button-text" >
               {processing ? (
                   <div className="spinner" id="spinner"/>
@@ -125,7 +123,24 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                   "To pay"
               )}
             </span>
-            </button>
+                </button>
+            </form>
+            <p className="text-xs mx-auto w-full mt-3 color-gold">
+                The bank card data will be transmitted in a fixed form
+            </p>
+            {/*<button*/}
+            {/*    className="w-full justify-center mx-auto mt-3 w-72"*/}
+            {/*    disabled={ processing || disabled || succeeded } onClick={()=>{console.log('!!!!')}}*/}
+            {/*    id="submit"*/}
+            {/*>*/}
+            {/*<span id="button-text" >*/}
+            {/*  {processing ? (*/}
+            {/*      <div className="spinner" id="spinner"/>*/}
+            {/*  ) : (*/}
+            {/*      "To pay"*/}
+            {/*  )}*/}
+            {/*</span>*/}
+            {/*</button>*/}
         </div>
 
     );
