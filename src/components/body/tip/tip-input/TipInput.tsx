@@ -7,26 +7,6 @@ interface IProps {
 }
 
 
-const handleMask = (amount: number) => {
-    const digit = /[0-9]/;
-    let mask = [digit];
-
-    let numbers = amount.toString().length;
-
-    console.log(numbers);
-
-    while (mask.length < numbers)
-        mask.unshift(digit);
-
-    console.log(mask);
-    //
-    // mask[mask.length - 1] = digitE;
-    console.log(amount)
-
-    console.log(mask);
-    console.log('click')
-    return (mask + ' €')
-};
 
 const handleInput = (amount: number) => {
    let newMask = null;
@@ -51,9 +31,9 @@ const TipInput: React.FC<IProps> = ({amount, handleAmount}) =>
         <InputMask  alwaysShowMask={true}
                     mask={amount + ' €'}
 
-                    // x§amount.toString() + ' €'
 
-                onChange={() => handleMask(amount)}
+
+
                 className="border-bottom-color text-center w-20 sm:w-60 outline-none
                  p-3 bg-transparent
                  border-b-2 text-white font-sans text-md sm:text-2xl pt-1 border-l-0
