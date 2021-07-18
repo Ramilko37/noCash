@@ -31,7 +31,6 @@ const handleMask = (amount: number) => {
 const TipButton: React.FC<IProps> = ({amount, handleAmount, bgColor}) => {
     return (<span onClick={() => {
         handleAmount(amount);
-        handleMask(amount);
     }
     }
                   className={`w-16 h-8 sm:w-28 sm:h-10 bg-${bgColor}
