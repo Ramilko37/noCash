@@ -20,7 +20,9 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
     const [succeeded, setSucceeded] = useState(false);
     const [error, setError] = useState('');
     const [processing, setProcessing] = useState(false);
-    const [disabled, setDisabled] = useState(true);
+    const [disabledCard, setDisabledCard] = useState(true);
+    const [disabledCvc, setDisabledCvc] = useState(true);
+    const [disabledDate, setDisabledDate] = useState(true);
     const [clientSecret, setClientSecret] = useState('');
     const [activeButton, setActiveButton] = useState(0);
 
@@ -42,12 +44,12 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
     }, []);
 
 
-    const handleChange = async (event: any) => {
-        // Listen for changes in the CardElement
-        // and display any errors as the customer types their card details
-        setDisabled(event.empty);
+    const handleChangePayment = async (event: any, func: (empty: boolean) => void) => {
+        func(event.empty);
         setError(event.error ? event.error.message : "");
     };
+
+
     const handleSubmit = async (ev: any) => {
         ev.preventDefault();
         setProcessing(true);
@@ -61,7 +63,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
             setProcessing(false);
         } else {
             setError('');
-            setProcessing(false);
+           ; setProcessing(false);
             setSucceeded(true);
         }
     };
@@ -79,18 +81,21 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                 <div className="w-64 h-14 sm:w-3/4 mb-5">
                     <label className="text-xs">
                         Card Number:
-                        <CardNumberElement className="form-input-bg form-input-h" id="card-number" options={{placeholder:'0000 0000 0000 0000',style}} onChange={handleChange} />
+                        <CardNumberElement className="form-input-bg form-input-h" id="card-number"
+                                           options={{placeholder:'0000 0000 0000 0000',style}} onChange={(e) => handleChangePayment(e, setDisabledCard)} />
                     </label>
 
                 </div>
                 <div className="flex space-x-12 w-72">
                     <label className="text-xs">
                         Expiry Date:
-                        <CardExpiryElement className="form-input-year form-input-bg form-input-h" options={{placeholder:'00/00',style}} id="card-expiry"/>
+                        <CardExpiryElement className="form-input-year form-input-bg form-input-h"
+                                           options={{placeholder:'00/00',style}} id="card-expiry" onChange={(e) => handleChangePayment(e, setDisabledDate)}/>
                     </label>
                     <label className="text-xs">
                         CVC:
-                        <CardCvcElement className="form-input-cvc form-input-bg w-16 form-input-h text-sm" options={{placeholder:'000', style}} id="card-cvc"/>
+                        <CardCvcElement className="form-input-cvc form-input-bg w-16 form-input-h text-sm"
+                                        options={{placeholder:'000', style}} id="card-cvc" onChange={(e) => handleChangePayment(e, setDisabledCvc)}/>
                     </label>
                 </div>
 
@@ -113,7 +118,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                 </p>
                 <button
                     className="w-full justify-center mx-auto mt-3 w-72"
-                    disabled={ processing || disabled || succeeded } onClick={()=>{console.log('!!!!')}}
+                    disabled={ processing || disabledCard || disabledCvc || disabledDate || succeeded } onClick={()=>{console.log('!!!!')}}
                     id="submit"
                 >
             <span id="button-text" >
@@ -128,19 +133,6 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
             <p className="text-xs mx-auto w-full mt-3 color-gold">
                 The bank card data will be transmitted in a fixed form
             </p>
-            {/*<button*/}
-            {/*    className="w-full justify-center mx-auto mt-3 w-72"*/}
-            {/*    disabled={ processing || disabled || succeeded } onClick={()=>{console.log('!!!!')}}*/}
-            {/*    id="submit"*/}
-            {/*>*/}
-            {/*<span id="button-text" >*/}
-            {/*  {processing ? (*/}
-            {/*      <div className="spinner" id="spinner"/>*/}
-            {/*  ) : (*/}
-            {/*      "To pay"*/}
-            {/*  )}*/}
-            {/*</span>*/}
-            {/*</button>*/}
         </div>
 
     );
