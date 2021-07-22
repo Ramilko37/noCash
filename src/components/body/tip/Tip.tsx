@@ -15,7 +15,7 @@ import CardPayButton from "../pay/CardPayButton";
 const amountList = [5, 10, 15, 20]
 
 
-const stripePromise = loadStripe('pk_test_51JDSkcH8cMQfrIVy68H6nsaNjU7rT2dIR7TmwoTyHdxTRfSUs545Y9LCEcZy1Zz9FgmYQAUaBefB0tdttcBynbZq00n5YsFFUb');
+const stripePromise = loadStripe('pk_live_51JDSkcH8cMQfrIVyeB5uqP2rHebphnA9kAqCAe0GMNF0mC0uUXZEmTL36gUC10pIYuctKgLUdm3osDKZgWQXJktj008m3VSvHf');
 
 interface IProps {
     step: number
