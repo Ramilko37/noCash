@@ -11,7 +11,7 @@ const Customer: React.FC = () => {
 
     useEffect(() => {
         axios
-            .post("https://quiet-platform-317414.uc.r.appspot.com/customer", uuid)
+            .post("https://nocash-319015.ew.r.appspot.com/customer", uuid)
             .then((response) => {
                 console.log("Response: ", response);
                 setCustomer(response.data);

@@ -31,7 +31,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
 
     useEffect(() => {
         axios
-            .post("https://quiet-platform-317414.uc.r.appspot.com/payment", {
+            .post("https://nocash-319015.ew.r.appspot.com/payment", {
                 amount: amount
             })
             .then((response) => {
@@ -108,13 +108,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                 )}
                 {/* Show a success message upon completion */}
                 <p className={succeeded ? "result-message" : "result-message hidden"}>
-                    Payment succeeded, see the result in your
-                    <a
-                        href={`https://dashboard.stripe.com/test/payments`}
-                    >
-                        {" "}
-                        Stripe dashboard.
-                    </a> Refresh the page to pay again.
+                    Payment succeeded
                 </p>
                 <button
                     className="w-full justify-center mx-auto mt-3 w-72"
