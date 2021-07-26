@@ -10,6 +10,7 @@ import Input from "../review/input/Input";
 import RadioButton from "../review/radiobuttons/RadioButton";
 import ApplePayButton from "../pay/ApplePayButton";
 import CardPayButton from "../pay/CardPayButton";
+import Checkbox from "../review/radiobuttons/Checkbox";
 
 
 const amountList = [5, 10, 15, 20]
@@ -25,6 +26,13 @@ interface IProps {
 }
 
 const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
+
+    const [checked, setChecked] = useState(false);
+    const handleRadio = () => {
+        // setChecked(checked);
+        console.log('RADIO!')
+        // return checked
+    };
 
     // @ts-ignore
     return (
@@ -51,11 +59,12 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
                 </div>
                 <Input/>
                 <div className="w-72 sm:w-96 flex space-x-1 mx-auto">
+
                     <div className="flex pt-1 mx-auto text-white flex-wrap mt-4 justify-center">
                         <input id="radio7" type="checkbox" name="radio" className="hidden"/>
                         <label htmlFor="radio7" className="flex items-center cursor-pointer">
-                            <RadioButton id={'radio7'}
-                                         content={''}/>
+                            <Checkbox
+                                checked={!checked} onChange={handleRadio}/>
                             <p className="text-xs max-w-md">I want to cover transaction costs (5% of the tip amount) so that the employee receives the full amount</p>
                         </label>
                     </div>
