@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import './radiobuttons.css';
 interface IProps {
-
+    onChange: React.ChangeEventHandler<HTMLInputElement>;
     checked: boolean,
-    onChange: () => void
 }
 
 const Checkbox: React.FC<IProps> = (iProps:IProps) => {

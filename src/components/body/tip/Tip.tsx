@@ -27,12 +27,11 @@ interface IProps {
 
 const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
 
-    const [checked, setChecked] = useState(false);
-    const handleRadio = () => {
-        // setChecked(checked);
-        console.log('RADIO!')
-        // return checked
-    };
+
+
+   function handleChange() {
+        console.log('1')
+    }
 
     // @ts-ignore
     return (
@@ -63,8 +62,7 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
                     <div className="flex pt-1 mx-auto text-white flex-wrap mt-4 justify-center">
                         <input id="radio7" type="checkbox" name="radio" className="hidden"/>
                         <label htmlFor="radio7" className="flex items-center cursor-pointer">
-                            <Checkbox
-                                checked={!checked} onChange={handleRadio}/>
+                            <Checkbox onChange={handleChange} checked={true}/>
                             <p className="text-xs max-w-md">I want to cover transaction costs (5% of the tip amount) so that the employee receives the full amount</p>
                         </label>
                     </div>
