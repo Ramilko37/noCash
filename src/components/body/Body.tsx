@@ -24,13 +24,14 @@ const Body: React.FC = () =>{
 
 
 return (
+
     <div className="container bg-gray-700 customer-rounded sm:max-w-screen-lg md:max-w-screen-xl flex-col lg:flex md:flex-row sm:flex-col pb-6">
-        {step === 0 ? <Customer /> : 
+        {step === 0 ? <Customer /> :
         <div className="flex text-white text-lg place-content-center space-x-4 p-4">
-            <span >Payment amount </span> 
+            <span >Payment amount </span>
             <span > {amount} €</span>
         </div>
-        }    
+        }
     <Tip step={step} handleStep={handleStep} amount={amount} handleAmount={handleAmount}/>
 </div>
 )
