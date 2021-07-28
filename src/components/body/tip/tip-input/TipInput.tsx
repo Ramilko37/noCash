@@ -1,4 +1,4 @@
-import  React, { useState } from "react";
+import  React from "react";
 import { default as NumberFormat } from 'react-number-format';
 import closeIcon from "../../../../img/Close Icon.png";
 
@@ -21,7 +21,7 @@ return (
                  p-3 bg-transparent
                  border-b-2 text-white font-sans text-md sm:text-2xl pt-1 border-l-0
                   border-t-0 border-r-0 rounded-none focus-within:ring-0 input-appearance "/>
-        <button className="bg-none w-5 h-5 p-0 border-solid outline-none"><img className="w-3 h-3 mt-2.5" src={closeIcon} alt="close"/>
+        <button className="bg-none w-5 h-5 p-0 border-solid outline-none" onClick={()=>handleAmount(0)}><img className="w-3 h-3 mt-2.5" src={closeIcon} alt="close"/>
         </button>
 
     </div>
