@@ -1,4 +1,6 @@
 import React from "react";
+import closeIcon from '../../../../img/Close Icon.png';
+
 
 
 const Input: React.FC = () =>
