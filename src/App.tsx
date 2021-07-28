@@ -10,16 +10,21 @@ function App() {
         <div className="h-screen w-screen bg-gray-800 pb-10">
 
 
-
-
             <Route path="/:uuid" exact>
                 <Header/>
-                <Tip/>
+                <Body/>
             </Route>
-            <Route path="/:uuid/payment" exact>
-                <Header/>
-                <Payment/>
-            </Route>
+
+            {/*<Route path="/:uuid" exact>*/}
+            {/*    <Header/>*/}
+            {/*    <Tip/>*/}
+            {/*</Route>*/}
+            {/*<Route path="/:uuid/payment" exact>*/}
+            {/*    <Header/>*/}
+            {/*    <Payment/>*/}
+            {/*</Route>*/}
+
+
         </div>
     )
 }

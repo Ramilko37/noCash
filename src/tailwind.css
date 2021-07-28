@@ -103,4 +103,9 @@ body {
     .radio-btn-border {
         border: 2px solid gray;
     }
+
+    .bg-color {
+        background-color: #283142;
+    }
 }
+
