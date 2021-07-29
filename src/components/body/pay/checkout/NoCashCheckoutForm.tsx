@@ -75,10 +75,10 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
             }
     }
     return (
-        <div className="flex-col justify-center w-72 sm:w-90 md:w-3/4 mx-auto pay-form-bg">
+        <div className="flex-col justify-center w-72 md:w-5/12 mx-auto pay-form-bg">
             <form id="payment-form" onSubmit={handleSubmit}
                   className="flex flex-col text-gray-300 p-0 w-full justify-center mx-auto md:mt-10 form-p form-bg" aria-required={true}>
-                <div className="w-64 h-14 sm:w-3/4 mb-5">
+                <div className="w-64 h-14 md:w-full mb-5">
                     <label className="text-xs">
                         Card Number:
                         <CardNumberElement className="form-input-bg form-input-h" id="card-number"

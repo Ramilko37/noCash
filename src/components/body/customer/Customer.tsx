@@ -22,10 +22,10 @@ const Customer: React.FC = () => {
     }, []);
 
     return (<div className="
-    h-22
+    h-20
+    sm:h-36
     w-full
-    lg:w-2/5
-    lg:max-h-full
+    sm:w-10/12
     items-start
     border-solid shadow-2xl
     flex flex-row-reverse
@@ -34,9 +34,10 @@ const Customer: React.FC = () => {
     space-x-6
     customer-rounded
     mx-auto
+    bg-red
     ">
         <img
-            className="ml-12 mr-5 lg:ml-0 img-rounded border-2 border-yellow-600 w-20 h-20 mt-3 mb-3 md: w-24 h-24"
+            className="ml-12 mr-5 lg:ml-0 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"
             src={customer.imageUrl}
             alt=""
         />

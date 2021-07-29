@@ -7,13 +7,15 @@ import Payment from "./components/payment/Payment";
 
 function App() {
     return (
-        <div className="h-screen w-screen bg-gray-800 pb-10">
+        <div className="h-screen w-screen mx-auto pb-10 bg-dark">
+            <div  className="body-width pb-10 backgroundImage">
+                <Route path="/:uuid" exact>
+                    <Header/>
+                    <Body/>
+                </Route>
+            </div>
 
 
-            <Route path="/:uuid" exact>
-                <Header/>
-                <Body/>
-            </Route>
 
             {/*<Route path="/:uuid" exact>*/}
             {/*    <Header/>*/}

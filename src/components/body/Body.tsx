@@ -25,7 +25,7 @@ const Body: React.FC = () =>{
 
 return (
 
-    <div className="container bg-color customer-rounded sm:max-w-screen-lg md:max-w-screen-xl flex-col lg:flex md:flex-row sm:flex-col pb-6">
+    <div className="container customer-rounded sm:max-w-screen-lg md:max-w-screen-xl flex-col lg:flex md:flex-row sm:flex-col pb-6 bg-color">
         {step === 0 ? <Customer /> :
         <div className="flex text-white text-lg place-content-center space-x-4 p-4">
             <span >Payment amount </span>
