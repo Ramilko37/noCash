@@ -52,7 +52,7 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
                     </div>
                 </div>
                 <Rate/>
-                <div className="flex-col w-60 justify-center mx-auto text-white">
+                <div className="flex-col w-60 sm:w-3/5 justify-center mx-auto text-white">
                     <h3 className="text-center mb-6">What can we do better?</h3>
                     <Radiobuttons/>
                 </div>

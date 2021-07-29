@@ -36,7 +36,7 @@ const Customer: React.FC = () => {
     mx-auto
     ">
         <img
-            className="ml-12 mr-5 lg:ml-0 img-rounded border-2 border-yellow-600 w-20 h-20 mt-3 mb-3 md: w-24 h-24"
+            className="ml-12 mr-5 lg:ml-0 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"
             src={customer.imageUrl}
             alt=""
         />

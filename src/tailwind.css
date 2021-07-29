@@ -107,5 +107,9 @@ body {
     .bg-color {
         background-color: #283142;
     }
+
+    .input-width {
+        width: 486px;
+    }
 }
 
