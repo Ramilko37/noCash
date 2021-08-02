@@ -36,7 +36,7 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid}) => {
     return (
         <div className="
         w-full
-        h-screen
+        h-auto
         sm:w-10/12
         mx-auto
         border-solid shadow-2xl
@@ -88,7 +88,7 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid}) => {
                 </Elements>
                 <CardPayButton uuid={uuid}/>
             </div>
-            <p className="w-60 text-center text-white mx-auto mt-4 mb-10 text-xs whitespace-pre-wrap">By making a
+            <p className="w-60 text-center text-white mx-auto mt-4 pb-10 text-xs whitespace-pre-wrap">By making a
                 payment,
                 you agree to the <a
                     href="#" className="underline">terms of the NoCash service</a></p>
