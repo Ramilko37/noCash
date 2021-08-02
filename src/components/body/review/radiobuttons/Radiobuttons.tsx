@@ -34,8 +34,6 @@ const radioArray = [
 ]
 
 const RadioButtons: React.FC<{}> = () =>
-    <div className="flex-col w-56 sm:w-96 justify-center mx-auto text-white">
-        <h3 className="text-center mb-6">What can we do better?</h3>
    <div className="grid grid-cols-2 sm:grid-cols-3 justify-between">
        {
            radioArray.map(e =>
@@ -43,8 +41,6 @@ const RadioButtons: React.FC<{}> = () =>
        )
        }
    </div>
-    </div>
-
 
 
 

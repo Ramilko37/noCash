@@ -45,16 +45,17 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
         sm:h-3/4 sm:w-full
 
         ">
-                <div className="mt-2 sm:mt-6 mb-5 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
+                <div className="mt-2 sm:mt-6 mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
                     <TipInput handleAmount={handleAmount} amount={amount}/>
-                </div>
-                    <div className="flex mt-4 mx-auto justify-center mb-6">
+                    <div className="flex mt-4">
                         {amountList.map(e => <TipButton bgColor={e === amount ? 'gradient' : 'tipButton'} handleAmount={handleAmount} amount={e} key={e}/>)}
                     </div>
-
-
+                </div>
                 <Rate/>
-                <Radiobuttons/>
+                <div className="flex-col w-60 sm:w-3/5 justify-center mx-auto text-white">
+                    <h3 className="text-center mb-6">What can we do better?</h3>
+                    <Radiobuttons/>
+                </div>
                 <Input/>
                 <div className="w-72 sm:w-96 flex space-x-1 mx-auto">
 
@@ -67,7 +68,7 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
                     </div>
 
                 </div>
-                <div className="w-72 sm:w-3/5 flex-col sm:flex-row mx-auto lg:w-4/5 sm:flex mt-4">
+                <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">
                     <ApplePayButton />
                     <CardPayButton handleStep={() => handleStep(1)}/>
                 </div>

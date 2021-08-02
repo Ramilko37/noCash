@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+    background: rgb(31 42 56);
+}
 
 @layer base {
     @font-face {
@@ -106,16 +108,8 @@
         background-color: #283142;
     }
 
-    .bg-dark {
-        background: #1C2632;
-    }
-
     .input-width {
         width: 486px;
-    }
-
-    .body-width {
-        width: 660px;
     }
 }
 
