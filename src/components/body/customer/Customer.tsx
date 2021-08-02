@@ -22,7 +22,7 @@ const Customer: React.FC = () => {
     }, []);
 
     return (<div className="
-    h-20
+    h-24
     sm:h-36
     w-full
     sm:w-10/12

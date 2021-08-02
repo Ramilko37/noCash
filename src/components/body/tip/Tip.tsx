@@ -29,7 +29,7 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
 
 
 
-   function handleChange() {
+    function handleChange() {
         console.log('1')
     }
 
@@ -43,7 +43,7 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
         lg:h-full lg:w-3/4
         md:h-3/4 md:w-full
         sm:h-3/4 sm:w-full
-
+        bg-transparent
         ">
                 <div className="mt-2 sm:mt-6 mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
                     <TipInput handleAmount={handleAmount} amount={amount}/>
@@ -68,7 +68,7 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
                     </div>
 
                 </div>
-                <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">
+                <div className="w-72 sm:w-2/3 flex-col sm:flex mx-auto justify-between mt-4">
                     <ApplePayButton />
                     <CardPayButton handleStep={() => handleStep(1)}/>
                 </div>
@@ -91,10 +91,10 @@ const Tip: React.FC<IProps> = ({step, handleStep, amount, handleAmount}) => {
 
                 {/*<div className="flex justify-center w-75 mt-36">*/}
                 {/*    <div className="flex justify-center">*/}
-                        <Elements stripe={stripePromise}>
-                            <NoCashCheckoutForm amount={amount}/>
-                        </Elements>
-                    {/*</div>*/}
+                <Elements stripe={stripePromise}>
+                    <NoCashCheckoutForm amount={amount}/>
+                </Elements>
+                {/*</div>*/}
 
             </div>
     )

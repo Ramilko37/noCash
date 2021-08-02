@@ -8,7 +8,7 @@ import Payment from "./components/payment/Payment";
 function App() {
     return (
         <div className="h-screen w-screen mx-auto pb-10 bg-dark">
-            <div  className="body-width pb-10 backgroundImage">
+            <div  className="body-width pb-10 bg-color">
                 <Route path="/:uuid" exact>
                     <Header/>
                     <Body/>
