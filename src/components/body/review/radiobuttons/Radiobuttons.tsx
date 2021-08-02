@@ -27,10 +27,7 @@ const radioArray = [
         id: 'radio6',
         content: 'Atmosphere',
     },
-    // {
-    //     id: 'radio7',
-    //     content: 'I want to cover transaction costs (5% of the tip amount) so that the employee receives the full amount',
-    // }
+
 ]
 
 const RadioButtons: React.FC<{}> = () =>

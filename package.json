@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "craco build && mkdir -p ./build/.well-known && cp ./applepay/apple-developer-merchantid-domain-association ./build/.well-known/",
     "test": "craco test",
     "eject": "react-scripts eject"
   },

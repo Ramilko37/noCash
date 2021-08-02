@@ -4,10 +4,9 @@ import {
     useElements, CardNumberElement, CardExpiryElement, CardCvcElement
 } from "@stripe/react-stripe-js";
 import './NoCashCheckoutForm.css';
-import '../../tip/InputMask.css';
+import '../../../tip/InputMask.css';
 import {ConfirmCardPaymentData} from "@stripe/stripe-js";
 import axios from "axios";
-import InputMask from "react-input-mask";
 
 interface IProps {
     step?: number
@@ -24,7 +23,6 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
     const [disabledCvc, setDisabledCvc] = useState(true);
     const [disabledDate, setDisabledDate] = useState(true);
     const [clientSecret, setClientSecret] = useState('');
-    const [activeButton, setActiveButton] = useState(0);
 
     const stripe = useStripe();
     const elements = useElements();
@@ -63,7 +61,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
             setProcessing(false);
         } else {
             setError('');
-           ; setProcessing(false);
+            setProcessing(false);
             setSucceeded(true);
         }
     };
@@ -98,8 +96,6 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                                         options={{placeholder:'000', style}} id="card-cvc" onChange={(e) => handleChangePayment(e, setDisabledCvc)}/>
                     </label>
                 </div>
-
-
 
                 {error && (
                     <div className="card-error" role="alert">

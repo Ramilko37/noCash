@@ -1,32 +1,27 @@
 import React from 'react';
-import Body from './components/body/Body';
+import Body from './components/payment/Body';
 import Header from "./components/header/Header";
 import {Route} from "react-router";
-import Tip from "./components/body/tip/Tip";
 import Payment from "./components/payment/Payment";
 
 function App() {
+
+    let [amount, setAmount] = React.useState(5)
+    const handleAmount = (a: number) => {
+        setAmount(a)
+    }
+
     return (
-        <div className="h-screen w-screen mx-auto pb-10 bg-dark">
-            <div  className="body-width pb-10 bg-color">
-                <Route path="/:uuid" exact>
-                    <Header/>
-                    <Body/>
-                </Route>
-            </div>
 
-
-
-            {/*<Route path="/:uuid" exact>*/}
-            {/*    <Header/>*/}
-            {/*    <Tip/>*/}
-            {/*</Route>*/}
-            {/*<Route path="/:uuid/payment" exact>*/}
-            {/*    <Header/>*/}
-            {/*    <Payment/>*/}
-            {/*</Route>*/}
-
-
+        <div className="h-screen w-screen bg-gray-800 pb-10">
+            <Route path="/customer/:uuid" exact>
+                <Header/>
+                <Body amount={amount} handleAmount={handleAmount}/>
+            </Route>
+            <Route path="/customer/payment/:uuid" exact>
+                <Header/>
+                <Payment amount={amount}/>
+            </Route>
         </div>
     )
 }

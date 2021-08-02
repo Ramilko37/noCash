@@ -2,13 +2,13 @@ import React, {useEffect} from 'react';
 import axios from "axios";
 import {useParams} from "react-router";
 
-const Customer: React.FC = () => {
+interface IProps {
+    uuid: string
+}
+
+const Customer: React.FC<IProps> = ({uuid}) => {
 
     let [customer, setCustomer] = React.useState({name: "", imageUrl: "", place: ""})
-
-    let uuid = useParams();
-    console.log("UUID: ", uuid)
-
     useEffect(() => {
         axios
             .post("https://nocash-319015.ew.r.appspot.com/customer", uuid)
