@@ -35,13 +35,21 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid}) => {
 
     return (
         <div className="
-        lg:h-full lg:w-3/4
-        md:h-3/4 md:w-full
-        sm:h-3/4 sm:w-full
-        bg-transparent
+        w-full
+        h-screen
+        sm:w-10/12
+        mx-auto
+        border-solid shadow-2xl
+        pt-6
+        customer-rounded
+        border-t-0
+        bg-gray-700
+        -mt-10
+
+
         ">
 
-            <div className="mt-2 sm:mt-6 mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
+            <div className="mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
                 <TipInput handleAmount={handleAmount} amount={amount}/>
                 <div className="flex mt-4">
                     {amountList.map(e => <TipButton bgColor={e === amount ? 'gradient' : 'tipButton'}

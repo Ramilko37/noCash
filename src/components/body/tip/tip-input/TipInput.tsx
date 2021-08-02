@@ -13,7 +13,7 @@ const TipInput: React.FC<IProps> = ({amount, handleAmount}) => {
 
 
 return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mt-10">
         <NumberFormat value={amount} suffix={' €'} onValueChange={(e) => {
             handleAmount(parseFloat(e.value))
         }

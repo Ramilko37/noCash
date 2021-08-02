@@ -13,7 +13,7 @@ function App() {
 
     return (
 
-        <div className="h-screen w-screen bg-gray-800 pb-10">
+        <div className="h-screen w-screen pb-10">
             <Route path="/customer/:uuid" exact>
                 <Header/>
                 <Body amount={amount} handleAmount={handleAmount}/>

@@ -2201,8 +2201,8 @@ input[type=number] {
 }
 
 .bg-gray-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+
+  background-color: #283142;
 }
 
 .bg-gray-800 {

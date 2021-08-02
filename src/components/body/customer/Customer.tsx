@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import axios from "axios";
-import {useParams} from "react-router";
 
 interface IProps {
     uuid: string
@@ -32,9 +31,12 @@ const Customer: React.FC<IProps> = ({uuid}) => {
     lg:flex-col md:flex-row sm:flex-row
     space-y-6
     space-x-6
-    customer-rounded
+    rounded-3xl
+
     mx-auto
-    bg-red
+    relative
+    z-50
+    bg-gray-700
     ">
         <img
             className="ml-12 mr-5 lg:ml-0 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"

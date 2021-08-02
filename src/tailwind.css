@@ -82,11 +82,11 @@ body {
     }
 
     .color-gold {
-        color: #DFAF3F;;
+        color: #DFAF3F;
     }
 
     .pay-form-bg {
-        color: #1C2632;
+        background-color: rgb(28, 38, 50);
     }
 
     .tip-btn-font {
@@ -105,11 +105,12 @@ body {
     }
 
     .bg-color {
-        background-color: #283142;
+        background-color: #283142 !important;
     }
 
     .input-width {
         width: 486px;
     }
+
 }
 
