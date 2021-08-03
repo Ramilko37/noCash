@@ -6,23 +6,27 @@ import Payment from "./components/payment/Payment";
 
 function App() {
     const [checked, setChecked] = useState(false);
+    let [amount, setAmount] = React.useState(5);
 
     const handleChecked = () => {
-        setChecked(!checked);
-        handleAmount(amount + (amount*0.05));
-
+        let oldAmount = amount;
+        console.log(oldAmount);
+        console.log(!checked);
         if (checked) {
-            handleAmount(amount );
+            setChecked(checked);
+            handleAmount(amount + (amount * 0.05));
+        }
+        else if (!checked) {
+            handleAmount(oldAmount );
+            setChecked(!checked)
         }
         console.log(!checked);
     }
 
-    let [amount, setAmount] = React.useState(5)
+
+
     const handleAmount = (a: number) => {
-        if (!checked) {
-            setAmount(a + 1)
-        }
-        {setAmount(a)}
+        setAmount(a)
     }
 
 
