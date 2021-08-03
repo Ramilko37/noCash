@@ -45,11 +45,11 @@ const Customer: React.FC<IProps> = ({uuid}) => {
             alt=""
         />
         <div className="flex flex-col m-0 lg:mx-auto lg:mt-16 lg:w-44 lg:text-center">
-            <span className="text-2xl text-white">
-               {customer.name}
+            <span className="text-md md:text-2xl text-white">
+               {/*{customer.name}*/} Nicola Bilinacacaca
             </span>
             <span className="text-lg text-gray-300">
-            {customer.place}
+            {/*{customer.place}*/} BucksStar
             </span>
         </div>
 
