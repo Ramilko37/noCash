@@ -38,6 +38,7 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid}) => {
         w-full
         h-auto
         sm:w-10/12
+        lg: w-full
         mx-auto
         border-solid shadow-2xl
         pt-6
@@ -45,7 +46,7 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid}) => {
         border-t-0
         bg-gray-700
         -mt-10
-
+        lg:mt-0
 
         ">
 

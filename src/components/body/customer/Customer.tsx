@@ -25,6 +25,8 @@ const Customer: React.FC<IProps> = ({uuid}) => {
     sm:h-36
     w-full
     sm:w-10/12
+    lg:w-2/5
+    lg:h-auto
     items-start
     border-solid shadow-2xl
     flex flex-row-reverse
@@ -32,18 +34,17 @@ const Customer: React.FC<IProps> = ({uuid}) => {
     space-y-6
     space-x-6
     rounded-3xl
-
     mx-auto
     relative
     z-50
     bg-gray-700
     ">
         <img
-            className="ml-12 mr-5 lg:ml-0 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"
+            className="ml-12 mr-5 lg:mx-auto lg:mt-16 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"
             src={customer.imageUrl}
             alt=""
         />
-        <div className="flex flex-col m-0">
+        <div className="flex flex-col m-0 lg:mx-auto lg:mt-16 lg:w-44 lg:text-center">
             <span className="text-2xl text-white">
                {customer.name}
             </span>

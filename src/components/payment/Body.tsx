@@ -16,7 +16,9 @@ const Body: React.FC<IProps> = ({amount, handleAmount}) => {
 
     return (
         <div
-            className="container customer-rounded sm:max-w-screen-lg md:max-w-screen-xl flex-col lg:flex md:flex-row sm:flex-col pb-6">
+            className="container customer-rounded sm:max-w-screen-lg md:max-w-screen-xl
+            lg:w-10/12
+            flex-col lg:flex md:flex-row sm:flex-col pb-6">
             <Customer uuid={uuid}/>
             <Tip amount={amount} handleAmount={handleAmount} uuid={uuid}/>
         </div>
