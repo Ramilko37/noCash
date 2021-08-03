@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {PaymentRequestButtonElement, useStripe} from '@stripe/react-stripe-js';
 import axios from "axios";
-import {PaymentRequest, StripePaymentRequestButtonElementOptions} from "@stripe/stripe-js";
+import {PaymentRequest, StripeElementClasses, StripePaymentRequestButtonElementOptions} from "@stripe/stripe-js";
 
 const CheckoutForm = () => {
     const stripe = useStripe();
@@ -76,7 +76,11 @@ const CheckoutForm = () => {
     }
 
     if (paymentRequest) {
+        const cssClasses: StripeElementClasses = {
+            base: "apple-pay-border"
+        }
         const options: StripePaymentRequestButtonElementOptions = {
+            classes: cssClasses,
             paymentRequest: paymentRequest,
             style: {
                 paymentRequestButton: {

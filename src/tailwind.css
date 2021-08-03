@@ -6,6 +6,10 @@ body {
     background: rgb(31 42 56);
 }
 
+.apple-pay-border {
+    border-radius: 9999px;
+}
+
 @layer base {
     @font-face {
         font-family: Inter;
