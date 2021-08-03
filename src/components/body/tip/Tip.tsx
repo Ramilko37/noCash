@@ -31,20 +31,6 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
         setStarValue(value);
     }
 
-    // const [checked, setChecked] = useState(false);
-    //
-    // const handleChecked = () => {
-    //     setChecked(!checked);
-    //     handleAmount(amount + (amount*0.05));
-    //
-    //     if (checked) {
-    //         handleAmount(amount );
-    //     }
-    //     console.log(!checked);
-    // }
-
-
-
     return (
         <div className="
         w-full
@@ -93,6 +79,7 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
             <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">
                 <Elements stripe={stripePromise}>
                     <CheckoutForm/>
+                    <br/>
                 </Elements>
                 <CardPayButton uuid={uuid}/>
             </div>

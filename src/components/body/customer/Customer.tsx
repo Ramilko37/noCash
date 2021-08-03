@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import axios from "axios";
 
 interface IProps {
-    uuid: string
+    uuid: {}
 }
 
 const Customer: React.FC<IProps> = ({uuid}) => {
@@ -20,7 +20,8 @@ const Customer: React.FC<IProps> = ({uuid}) => {
             });
     }, []);
 
-    return (<div className="
+    return (
+        <div className="
     h-24
     sm:h-36
     w-full
@@ -39,20 +40,22 @@ const Customer: React.FC<IProps> = ({uuid}) => {
     z-50
     bg-gray-700
     ">
-        <img
-            className="ml-16 mr-5 lg:mx-auto lg:mt-16 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"
-            src={customer.imageUrl}
-            alt=""
-        />
-        <div className="flex flex-col m-0 lg:mx-auto lg:mt-16 lg:w-44 lg:text-center">
-            <span className="text-md md:text-2xl text-white">
-               {/*{customer.name}*/} Nicola Bilinacacaca
-            </span>
-            <span className="text-lg text-gray-300">
-            {/*{customer.place}*/} BucksStar
-            </span>
-        </div>
+            <img
+                className="ml-16 mr-5 lg:mx-auto lg:mt-16 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"
+                src={customer.imageUrl}
+                alt=""
+            />
+            <div className="flex flex-col m-0 lg:mx-auto lg:mt-16 lg:w-44 lg:text-center">
 
-    </div>)
+            <span className="text-md md:text-2xl text-white">
+               {customer.name}
+            </span>
+                <span className="text-lg text-gray-300">
+          {customer.place}
+            </span>
+            </div>
+
+        </div>
+    )
 }
-export default Customer
+export default Customer;
