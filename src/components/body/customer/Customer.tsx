@@ -40,7 +40,7 @@ const Customer: React.FC<IProps> = ({uuid}) => {
     bg-gray-700
     ">
         <img
-            className="ml-12 mr-5 lg:mx-auto lg:mt-16 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"
+            className="ml-16 mr-5 lg:mx-auto lg:mt-16 img-rounded border-2 border-yellow-600 w-16 h-16 mt-3 mb-3 md:w-24 md:h-24"
             src={customer.imageUrl}
             alt=""
         />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import TipButton from "./tip-button/TipButton";
 import TipInput from "./tip-input/TipInput";
 import {Elements} from "@stripe/react-stripe-js";
@@ -19,9 +19,11 @@ interface IProps {
     amount: number
     handleAmount: (e: number) => void
     uuid: string
+    checked: boolean
+    handleChecked: () => void;
 }
 
-const Tip: React.FC<IProps> = ({amount, handleAmount, uuid}) => {
+const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, checked}) => {
 
     const [starValue, setStarValue] = React.useState<number | null>(0);
 
@@ -29,9 +31,19 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid}) => {
         setStarValue(value);
     }
 
-    function handleChange() {
-        console.log('1')
-    }
+    // const [checked, setChecked] = useState(false);
+    //
+    // const handleChecked = () => {
+    //     setChecked(!checked);
+    //     handleAmount(amount + (amount*0.05));
+    //
+    //     if (checked) {
+    //         handleAmount(amount );
+    //     }
+    //     console.log(!checked);
+    // }
+
+
 
     return (
         <div className="
@@ -74,13 +86,8 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid}) => {
             }
             <div className="w-72 sm:w-96 flex space-x-1 mx-auto">
 
-                <div className="flex pt-1 mx-auto text-white flex-wrap mt-4 justify-center">
-                    <input id="radio7" type="checkbox" name="radio" className="hidden"/>
-                    <label htmlFor="radio7" className="flex items-center cursor-pointer">
-                        <Checkbox onChange={handleChange} checked={true}/>
-                        <p className="text-xs max-w-md">I want to cover transaction costs (5% of the tip amount) so that
-                            the employee receives the full amount</p>
-                    </label>
+                <div className="flex pt-1 mx-auto text-white mt-4 justify-center">
+                        <Checkbox checked={checked} handleChecked={handleChecked}/>
                 </div>
             </div>
             <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">

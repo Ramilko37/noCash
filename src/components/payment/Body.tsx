@@ -7,9 +7,11 @@ import {useParams} from "react-router";
 interface IProps {
     amount: number
     handleAmount: (e: number) => void
+    checked: boolean
+    handleChecked: () => void
 }
 
-const Body: React.FC<IProps> = ({amount, handleAmount}) => {
+const Body: React.FC<IProps> = ({amount, handleAmount, checked, handleChecked}) => {
 
     // @ts-ignore
     let {uuid} = useParams();
@@ -20,7 +22,7 @@ const Body: React.FC<IProps> = ({amount, handleAmount}) => {
             lg:w-10/12
             flex-col lg:flex md:flex-row sm:flex-col pb-6">
             <Customer uuid={uuid}/>
-            <Tip amount={amount} handleAmount={handleAmount} uuid={uuid}/>
+            <Tip amount={amount} handleAmount={handleAmount} uuid={uuid} checked={checked} handleChecked={handleChecked}/>
         </div>
     )
 
