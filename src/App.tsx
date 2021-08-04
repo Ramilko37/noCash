@@ -13,12 +13,12 @@ function App() {
         console.log(oldAmount);
         console.log(!checked);
         if (checked) {
-            setChecked(checked);
+            setChecked(!checked);
             handleAmount(amount + (amount * 0.05));
         }
         else if (!checked) {
-            handleAmount(oldAmount );
-            setChecked(!checked)
+            handleAmount(oldAmount);
+            setChecked(checked)
         }
         console.log(!checked);
     }
