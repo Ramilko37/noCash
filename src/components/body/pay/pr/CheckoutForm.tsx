@@ -20,7 +20,7 @@ const CheckoutForm: React.FC<IProps> = ({amount}) => {
                 currency: 'eur',
                 total: {
                     label: 'Demo total',
-                    amount: amount,
+                    amount: 100,
                 },
                 requestPayerName: true,
                 requestPayerEmail: true,
@@ -37,7 +37,7 @@ const CheckoutForm: React.FC<IProps> = ({amount}) => {
 
             axios
                 .post("https://nocash-319015.ew.r.appspot.com/payment", {
-                    amount: amount
+                    amount: 1
                 })
                 .then((response) => {
                     console.log("Response: ", response);

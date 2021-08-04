@@ -3,6 +3,7 @@ import Body from './components/payment/Body';
 import Header from "./components/header/Header";
 import {Route} from "react-router";
 import Payment from "./components/payment/Payment";
+import Customer from "./components/body/customer/Customer";
 
 function App() {
     const [checked, setChecked] = useState(false);
@@ -34,6 +35,9 @@ function App() {
     return (
 
         <div className="h-auto w-screen pb-10">
+            <Route path="/customers/:uuid" exact>
+                <Header/>
+            </Route>
             <Route path="/customer/:uuid" exact>
                 <Header/>
                 <Body amount={amount} handleAmount={handleAmount} checked={checked} handleChecked={handleChecked}/>

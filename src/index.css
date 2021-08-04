@@ -37,6 +37,9 @@ html {
 }
 .apple-pay-border {
     border-radius: 9999px !important;
+    background-color: #f8f8f8;
+    padding: 8px;
+    margin-bottom: 10px;
 }
 /*
 Sections
@@ -32380,6 +32383,14 @@ input[type=number] {
 .form-bg {
   background: #273040;
   border-radius: 14px;
+}
+
+.GooglePayButton {
+  border-radius: 9999px;
+}
+
+.ApplePayButton {
+  border-radius: 9999px;
 }
 
 .form-input-bg {

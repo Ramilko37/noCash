@@ -79,7 +79,6 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
             <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">
                 <Elements stripe={stripePromise}>
                     <CheckoutForm amount={amount}/>
-                    <br/>
                 </Elements>
                 <CardPayButton uuid={uuid}/>
             </div>

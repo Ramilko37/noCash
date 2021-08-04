@@ -15,4 +15,7 @@ input {
 }
 .apple-pay-border {
     border-radius: 9999px !important;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f8f8f8;
 }
