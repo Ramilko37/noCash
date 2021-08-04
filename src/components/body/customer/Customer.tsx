@@ -45,10 +45,10 @@ const Customer: React.FC<IProps> = ({uuid}) => {
             <div className="flex flex-col w-9/12 h-24 align-start mt-3 ml-6 md:mt-6 md:ml-14 lg:order-last
             lg:align-center">
                 <span className="text-xl md:text-2xl text-white lg:w-48">
-               {/*{customer.name}*/} Ramaaart Rammario
+               {customer.name}
             </span>
                 <span className="text-xs text-gray-300 md:text-2xl lg:text-base">
-            {/*{customer.place}*/} BucksStar
+            {customer.place}
             </span>
             </div>
         <div className="w-3/12 md:w-36 md:h-36 md:mt-3.5 lg:mt-16 space-0 mr-3 mt-1 md:mx-auto md:mt-0">
