@@ -89,12 +89,12 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                         <label className="text-xs">
                             Expiry Date:
                             <CardExpiryElement className="form-input-year form-input-bg form-input-h"
-                                               options={{placeholder:'00/00',style}} id="card-expiry" onChange={(e) => handleChangePayment(e, setDisabledDate)}/>
+                                               options={{placeholder:'00 / 00',style}} id="card-expiry" onChange={(e) => handleChangePayment(e, setDisabledDate)}/>
                         </label>
                         <label className="text-xs">
                             CVC:
                             <CardCvcElement className="form-input-cvc form-input-bg w-16 form-input-h text-sm"
-                                            options={{placeholder:'000', style}} id="card-cvc" onChange={(e) => handleChangePayment(e, setDisabledCvc)}/>
+                                            options={{placeholder:'●●●', style}} id="card-cvc" onChange={(e) => handleChangePayment(e, setDisabledCvc)}/>
                         </label>
                     </div>
 
