@@ -3,7 +3,11 @@ import {PaymentRequestButtonElement, useStripe} from '@stripe/react-stripe-js';
 import axios from "axios";
 import {PaymentRequest, StripeElementClasses, StripePaymentRequestButtonElementOptions} from "@stripe/stripe-js";
 
-const CheckoutForm = () => {
+interface IProps {
+    amount: number
+}
+
+const CheckoutForm: React.FC<IProps> = ({amount}) => {
     const stripe = useStripe();
     const [paymentRequest, setPaymentRequest] = useState<PaymentRequest | null>(null);
     const [clientSecret, setClientSecret] = useState('');
@@ -12,11 +16,11 @@ const CheckoutForm = () => {
         console.log("Stripe: ", stripe);
         if (stripe) {
             const pr = stripe.paymentRequest({
-                country: 'US',
-                currency: 'usd',
+                country: 'AU',
+                currency: 'eur',
                 total: {
                     label: 'Demo total',
-                    amount: 1099,
+                    amount: amount,
                 },
                 requestPayerName: true,
                 requestPayerEmail: true,
@@ -33,7 +37,7 @@ const CheckoutForm = () => {
 
             axios
                 .post("https://nocash-319015.ew.r.appspot.com/payment", {
-                    amount: 10
+                    amount: amount
                 })
                 .then((response) => {
                     console.log("Response: ", response);

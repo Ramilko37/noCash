@@ -75,36 +75,41 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
     return (
         <div className="flex-col justify-center w-72 md:w-5/12 mx-auto pay-form-bg">
             <form id="payment-form" onSubmit={handleSubmit}
-                  className="flex flex-col text-gray-300 p-0 w-full justify-center mx-auto md:mt-10 form-p form-bg" aria-required={true}>
-                <div className="w-64 h-14 md:w-full mb-5">
-                    <label className="text-xs">
-                        Card Number:
-                        <CardNumberElement className="form-input-bg form-input-h" id="card-number"
-                                           options={{placeholder:'0000 0000 0000 0000',style}} onChange={(e) => handleChangePayment(e, setDisabledCard)} />
-                    </label>
+                  className="flex flex-col text-gray-300 p-0 w-full justify-center mx-auto md:mt-10" aria-required={true}>
+                <div className="form-bg  form-p">
+                    <div className="w-64 h-14 md:w-full mb-5">
+                        <label className="text-xs">
+                            Card Number:
+                            <CardNumberElement className="form-input-bg form-input-h" id="card-number"
+                                               options={{placeholder:'0000 0000 0000 0000',style}} onChange={(e) => handleChangePayment(e, setDisabledCard)} />
+                        </label>
 
-                </div>
-                <div className="flex space-x-12 w-72">
-                    <label className="text-xs">
-                        Expiry Date:
-                        <CardExpiryElement className="form-input-year form-input-bg form-input-h"
-                                           options={{placeholder:'00/00',style}} id="card-expiry" onChange={(e) => handleChangePayment(e, setDisabledDate)}/>
-                    </label>
-                    <label className="text-xs">
-                        CVC:
-                        <CardCvcElement className="form-input-cvc form-input-bg w-16 form-input-h text-sm"
-                                        options={{placeholder:'000', style}} id="card-cvc" onChange={(e) => handleChangePayment(e, setDisabledCvc)}/>
-                    </label>
-                </div>
-
-                {error && (
-                    <div className="card-error" role="alert">
-                        {error}
                     </div>
-                )}
-                {/* Show a success message upon completion */}
-                <p className={succeeded ? "result-message" : "result-message hidden"}>
-                    Payment succeeded
+                    <div className="flex space-x-12 w-72">
+                        <label className="text-xs">
+                            Expiry Date:
+                            <CardExpiryElement className="form-input-year form-input-bg form-input-h"
+                                               options={{placeholder:'00/00',style}} id="card-expiry" onChange={(e) => handleChangePayment(e, setDisabledDate)}/>
+                        </label>
+                        <label className="text-xs">
+                            CVC:
+                            <CardCvcElement className="form-input-cvc form-input-bg w-16 form-input-h text-sm"
+                                            options={{placeholder:'000', style}} id="card-cvc" onChange={(e) => handleChangePayment(e, setDisabledCvc)}/>
+                        </label>
+                    </div>
+
+                    {error && (
+                        <div className="card-error" role="alert">
+                            {error}
+                        </div>
+                    )}
+                    {/* Show a success message upon completion */}
+                    <p className={succeeded ? "result-message" : "result-message hidden"}>
+                        Payment succeeded
+                    </p>
+                </div>
+                <p className="text-xs mx-auto w-full mt-3 color-gold">
+                    The bank card data will be transmitted in a fixed form
                 </p>
                 <button
                     className="w-full justify-center mx-auto mt-3 w-72"
@@ -120,9 +125,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
             </span>
                 </button>
             </form>
-            <p className="text-xs mx-auto w-full mt-3 color-gold">
-                The bank card data will be transmitted in a fixed form
-            </p>
+
         </div>
 
     );

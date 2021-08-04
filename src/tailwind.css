@@ -67,6 +67,7 @@ body {
 
     .form-bg {
         background: #273040;
+        border-radius: 14px;
     }
 
     .form-input-bg {

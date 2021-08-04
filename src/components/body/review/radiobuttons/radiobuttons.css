@@ -12,3 +12,6 @@ input[type="checkbox"]:checked + label span {
 input[type="checkbox"]:checked + label {
     color: #DFAF3F;
 }
+.apple-pay-border {
+    border-radius: 9999px !important;
+}

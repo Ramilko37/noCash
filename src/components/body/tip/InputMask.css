@@ -13,3 +13,6 @@ input {
     color: red;
     font-size: 16px;
 }
+.apple-pay-border {
+    border-radius: 9999px !important;
+}

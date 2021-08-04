@@ -35,7 +35,9 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
+.apple-pay-border {
+    border-radius: 9999px !important;
+}
 /*
 Sections
 ========
@@ -32377,6 +32379,7 @@ input[type=number] {
 
 .form-bg {
   background: #273040;
+  border-radius: 14px;
 }
 
 .form-input-bg {
