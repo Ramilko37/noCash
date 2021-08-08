@@ -3,6 +3,9 @@ import axios from "axios";
 import Customer from "../customer/Customer";
 import {Link} from "react-router-dom";
 import {T, useLocale} from "react-polyglot-hooks";
+import {
+    TailSpin
+} from '@agney/react-loading';
 
 
 interface IProps {
@@ -40,7 +43,13 @@ const Customers: React.FC<IFunc> = ({handleCustomer}) => {
     if (error) {
         return <div>Error</div>;
     } else if (!isLoaded) {
-        return <div>Loading...</div>;
+
+        return <div className="w-full h-full flex-col place-content-center pt-40">
+            <div className="flex text-white text-lg place-content-center">
+                {/*// @ts-ignore*/}
+                <TailSpin width="100" />
+            </div>
+        </div>;
     } else {
         return (
             <div className="w-full h-full flex-col justify-center ">

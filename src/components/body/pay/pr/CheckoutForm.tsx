@@ -19,8 +19,8 @@ const CheckoutForm: React.FC<IProps> = ({amount}) => {
                 country: 'AU',
                 currency: 'eur',
                 total: {
-                    label: 'Demo total',
-                    amount: 100,
+                    label: 'Total amount',
+                    amount: amount*100,
                 },
                 requestPayerName: true,
                 requestPayerEmail: true,
@@ -30,14 +30,13 @@ const CheckoutForm: React.FC<IProps> = ({amount}) => {
             pr.canMakePayment().then(result => {
                 console.log("result: ", result);
                 if (result) {
-                    // @ts-ignore
                     setPaymentRequest(pr);
                 }
             });
 
             axios
                 .post("https://nocash-319015.ew.r.appspot.com/payment", {
-                    amount: 1
+                    amount: amount
                 })
                 .then((response) => {
                     console.log("Response: ", response);
