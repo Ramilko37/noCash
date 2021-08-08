@@ -19,8 +19,6 @@ function App() {
 
     const handleChecked = () => {
         let oldAmount = amount;
-        console.log(oldAmount);
-        console.log(!checked);
         if (checked) {
             setChecked(!checked);
             handleAmount(amount + (amount * 0.05));
@@ -28,7 +26,6 @@ function App() {
             handleAmount(oldAmount);
             setChecked(checked)
         }
-        console.log(!checked);
     }
 
     const handleAmount = (a: number) => {
@@ -36,7 +33,6 @@ function App() {
     }
 
     const handleCustomer = (customer: IProps) => {
-        console.log(customer);
         setCustomer(customer)
     }
 

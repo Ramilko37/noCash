@@ -4,8 +4,8 @@ import Select from 'react-select';
 import {Fragment} from 'react';
 
 const languages = [
-    {value: "En", label: "En"},
-    {value: "Est", label: "Est"}
+    {value: "en", label: "En"},
+    {value: "est", label: "Est"}
 ];
 
 interface IProps {
