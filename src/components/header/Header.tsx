@@ -4,49 +4,59 @@ import Select from 'react-select';
 import {Fragment} from 'react';
 
 const languages = [
-    {value: "en", label: "En"},
-    {value: "est", label: "Est"}
+    {value: "En", label: "En"},
+    {value: "Est", label: "Est"}
 ];
 
 interface IProps {
     handleLanguage: (l: string) => void
 }
+
 const customStyles = {
     option: () => ({
         borderBottom: '0px',
+        color: 'white',
+
     }),
     control: () => ({
         width: 100,
         display: 'flex',
         color: 'white',
-        padding: '10px',
-        background: 'transparent'
+        paddingRight: 10,
+        background: 'transparent',
+
     }),
     menu: () => ({
         width: 100,
         display: 'flex',
-        color: 'white',
-        padding: '10px',
-        border: '1px solid white',
-        background: 'transparent'
+        color: 'gray',
+        paddingLeft: 10,
+        background: 'transparent',
+        zIndex: 100,
+        marginRight: 10,
     }),
     singleValue: () => {
         const opacity = 0.5;
         const transition = 'opacity 300ms';
-        const background = 'transparent'
+        const background = 'transparent';
+        const color = 'white';
         return {opacity, transition, background};
     }
 }
+
+
 const Header: React.FC<IProps> = ({handleLanguage}) =>
-    <div className="flex justify-center p-4 w-full">
+    <div className="flex justify-between p-4 sm:w-10/12
+            mx-auto sm:pb-0">
         <div className="justify-self-center place-content-center">
             <img src={logo} alt="NoCash"/>
         </div>
         <Fragment>
+
             <Select
-                styles={customStyles}
-                className="basic-single"
+                className="z-100 w-20 mr-10"
                 classNamePrefix="select"
+                styles={customStyles}
                 defaultValue={languages[1]}
                 isDisabled={false}
                 isLoading={false}
@@ -57,6 +67,8 @@ const Header: React.FC<IProps> = ({handleLanguage}) =>
                 options={languages}
                 onChange={(e) => handleLanguage(e ? e.value : "en")}
             />
+
+
         </Fragment>
     </div>
 export default Header

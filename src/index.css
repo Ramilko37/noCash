@@ -27677,6 +27677,10 @@ input[type=number] {
   z-index: 50;
 }
 
+.z-100 {
+  z-index: 100;
+}
+
 .z-auto {
   z-index: auto;
 }
