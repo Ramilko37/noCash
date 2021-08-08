@@ -117,5 +117,10 @@ body {
         width: 486px;
     }
 
+    .dbl-border {
+        border: solid 6px #fff;
+        outline: solid 6px #888;
+    }
+
 }
 

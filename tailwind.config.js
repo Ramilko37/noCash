@@ -1,14 +1,25 @@
 const {red} = require("tailwindcss/colors");
 const {colors} = require("@material-ui/core");
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     backgroundColor: theme => ({
-      ...theme('colors'),
       'trekondary': '#283142',
       'red': '#FF0000',
     }),
+    borderColor: theme => ({
+      DEFAULT: theme('colors.yellow.600', 'currentColor'),
+      'primary': 'linear-gradient(90deg, #DFAF3F 0%, #E15C5C 100%)',
+
+    }),
+    screens: {
+      'xs': '425px',
+      ...defaultTheme.screens,
+    },
+
     extend: {
 
 
@@ -39,7 +50,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: ['trekondary', 'red'],
+      backgroundColor: ['active'],
+      borderColor: ['active'],
     },
   },
   plugins: [

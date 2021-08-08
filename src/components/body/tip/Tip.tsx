@@ -50,7 +50,7 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
 
             <div className="mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
                 <TipInput handleAmount={handleAmount} amount={amount}/>
-                <div className="flex mt-4">
+                <div className="flex mt-4 xs:w-30">
                     {amountList.map(e => <TipButton bgColor={e === amount ? 'gradient' : 'tipButton'}
                                                     handleAmount={handleAmount} amount={e} key={e}/>)}
                 </div>

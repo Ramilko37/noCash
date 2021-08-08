@@ -4,6 +4,8 @@ import Header from "./components/header/Header";
 import {Route} from "react-router";
 import Payment from "./components/payment/Payment";
 import Customer from "./components/body/customer/Customer";
+import Customers from "./components/body/customers/Customers";
+
 
 function App() {
     const [checked, setChecked] = useState(false);
@@ -35,8 +37,9 @@ function App() {
     return (
 
         <div className="h-auto w-screen pb-10">
-            <Route path="/customers/:uuid" exact>
+            <Route path="/customers/" exact>
                 <Header/>
+                <Customers uuid={uuid}/>
             </Route>
             <Route path="/customer/:uuid" exact>
                 <Header/>

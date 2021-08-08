@@ -22,7 +22,6 @@ const Body: React.FC<IProps> = ({amount, handleAmount, checked, handleChecked}) 
             className="container customer-rounded sm:max-w-screen-lg md:max-w-screen-xl
             lg:w-10/12
             flex-col lg:flex md:flex-row sm:flex-col pb-6">
-
             <Customer uuid={data}/>
             <Tip amount={amount} handleAmount={handleAmount} uuid={uuid} checked={checked} handleChecked={handleChecked}/>
         </div>
