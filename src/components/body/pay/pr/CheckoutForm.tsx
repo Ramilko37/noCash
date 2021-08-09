@@ -20,7 +20,7 @@ const CheckoutForm: React.FC<IProps> = ({amount}) => {
                 currency: 'eur',
                 total: {
                     label: 'Total amount',
-                    amount: amount*100,
+                    amount: amount,
                 },
                 requestPayerName: true,
                 requestPayerEmail: true,
@@ -91,7 +91,9 @@ const CheckoutForm: React.FC<IProps> = ({amount}) => {
                 }
             }
         }
-        return <PaymentRequestButtonElement options={options}/>
+        return <div className="bg-white rounded-full">
+            <PaymentRequestButtonElement options={options}/>
+        </div>
     } else {
         return <div/>;
     }

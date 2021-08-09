@@ -23,14 +23,10 @@ const Customer: React.FC<IProps> = ({name, place, imageUrl, uuid}) => {
     border-solid shadow-2xl
     flex flex-row
     lg:flex-col md:flex-row sm:flex-row
-    rounded-3xl
     mx-auto
     relative
     z-50
     bg-gray-700
-    m-1
-    cursor-pointer
-    hover:bg-gray-800
     ">
         <div className="flex flex-col w-9/12 h-24 align-start mt-3 ml-6 md:mt-6 md:ml-14 lg:order-last
             lg:align-center">

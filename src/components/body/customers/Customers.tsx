@@ -29,7 +29,8 @@ const Customers: React.FC<IFunc> = ({handleCustomer}) => {
 
     useEffect(() => {
         axios
-            .get("http://localhost:8080/customers")
+            // .get("http://localhost:8080/customers")
+            .get("https://nocash-319015.ew.r.appspot.com/customers")
             .then((response) => {
                 console.log("Response: ", response);
                 setCustomers(response.data);
@@ -47,7 +48,7 @@ const Customers: React.FC<IFunc> = ({handleCustomer}) => {
         return <div className="w-full h-full flex-col place-content-center pt-40">
             <div className="flex text-white text-lg place-content-center">
                 {/*// @ts-ignore*/}
-                <TailSpin width="100" />
+                <TailSpin width="100"/>
             </div>
         </div>;
     } else {
@@ -55,10 +56,15 @@ const Customers: React.FC<IFunc> = ({handleCustomer}) => {
             <div className="w-full h-full flex-col justify-center ">
                 <div className="flex text-white text-lg place-content-center space-x-4 p-4">
                     <span> StarBucks </span>
+                    <img
+                        className="img-rounded  w-6 h-6"
+                        src="https://storage.googleapis.com/nocash.me/star.webp"
+                        alt=""
+                    />
                 </div>
                 {customers.map((e: IProps) => {
                     return (
-                        <div onClick={() => handleCustomer(e)}>
+                        <div className="m-1 cursor-pointer hover:bg-gray-800" onClick={() => handleCustomer(e)}>
                             <Link to={'/customer/' + e.uuid}>
                                 <Customer name={e.name} imageUrl={e.imageUrl} place={e.place} uuid={e.uuid}/>
                             </Link>

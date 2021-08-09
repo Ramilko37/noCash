@@ -105,7 +105,7 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                     )}
                     {/* Show a success message upon completion */}
                     <p className={succeeded ? "result-message" : "result-message hidden"}>
-                        Payment succeeded
+                        Success! Thanks for your tips.
                     </p>
                 </div>
                 <p className="text-xs mx-auto w-full mt-3 color-gold">
