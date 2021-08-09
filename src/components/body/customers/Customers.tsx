@@ -8,6 +8,7 @@ import {
 } from '@agney/react-loading';
 
 
+
 interface IProps {
     name: string
     place: string

@@ -35,6 +35,46 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
+
+.dbl-border {
+    border: solid 6px;
+    width: 108px;
+    height: 107px;
+    border-radius: 50%;
+}
+
+.rrrounded {
+  width: 70px;
+  height: 70px;
+  border: 3px solid transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), linear-gradient(to left, #DFAF3F, #E15C5C);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+  @media screen and (min-width: 768px) and (max-width: 2056px) {
+  .rrrounded {
+   width: 100px;
+  height: 102px;
+  }
+ }
+
+
+
+
+
+
+
+
+.border-gradient {
+  border: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.border-gradient-purple {
+  border-image-source: linear-gradient(to left, #DFAF3F, #E15C5C);
+}
+
 .apple-pay-border {
     border-radius: 9999px !important;
     margin-bottom: 10px;
@@ -8194,7 +8234,7 @@ input[type=number] {
 
 .border-gray-700 {
   --tw-border-opacity: 1;
-  border-color: rgba(55, 65, 81, var(--tw-border-opacity));
+  border-color: rgba(40, 49, 66, var(--tw-border-opacity));
 }
 
 .border-gray-800 {

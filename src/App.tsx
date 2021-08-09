@@ -4,6 +4,7 @@ import {Route} from "react-router";
 import Payment from "./components/payment/Payment";
 import Customers from "./components/body/customers/Customers";
 
+
 interface IProps {
     name: string
     place: string
