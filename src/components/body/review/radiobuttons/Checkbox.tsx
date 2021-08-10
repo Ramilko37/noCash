@@ -10,7 +10,7 @@ const Checkbox: React.FC<IProps> = ({handleChecked, checked}) => {
     return(
         <div className="flex mb-4">
             <input id="radio7" type="checkbox" name="radio" className="hidden"
-                   checked={checked} onChange={() => handleChecked()} />
+                   checked={checked} onChange={() => handleChecked} />
             <label htmlFor="radio7" className="flex cursor-pointer">
                 <span className="w-4 h-4 rounded-full radio-btn-border"></span>
             </label>

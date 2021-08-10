@@ -9,6 +9,7 @@ import Checkbox from "../review/radiobuttons/Checkbox";
 import CheckoutForm from "../pay/pr/CheckoutForm";
 import {loadStripe} from "@stripe/stripe-js";
 import Rate from "../review/rate/Rate";
+import RadioButton from "../review/radiobuttons/RadioButton";
 
 
 const amountList = [5, 10, 15, 20]
@@ -72,11 +73,12 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
                     :
                     <div/>
             }
-            <div className="w-72 sm:w-96 flex space-x-1 mx-auto">
+            <div className="w-10/12 flex pt-2 mx-auto text-white justify-center text-center">
 
-                <div className="flex pt-1 mx-auto text-white mt-4 justify-center">
-                        <Checkbox checked={checked} handleChecked={handleChecked}/>
-                </div>
+                        {/*<Checkbox checked={checked} handleChecked={handleChecked}/>*/}
+                    <RadioButton id={'7'} content={`I want to cover transaction costs (5% of the tip amount) so that
+                                  the employee receives the full amount`}/>
+
             </div>
             <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">
                 <Elements stripe={stripePromise}>

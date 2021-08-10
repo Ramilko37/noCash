@@ -12,3 +12,4 @@ input[type="checkbox"]:checked + label span {
 input[type="checkbox"]:checked + label {
     color: #DFAF3F;
 }
+
