@@ -23,6 +23,8 @@ interface IProps {
     handleChecked: () => void;
 }
 
+let displayGray = 'bg-gray-500';
+
 const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, checked}) => {
 
     const [starValue, setStarValue] = React.useState<number | null>(0);
@@ -80,7 +82,7 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
                 <Elements stripe={stripePromise}>
                     <CheckoutForm amount={amount}/>
                 </Elements>
-                <CardPayButton uuid={uuid}/>
+                <CardPayButton  uuid={uuid} amount={amount}/>
             </div>
             <p className="w-60 text-center text-white mx-auto mt-4 pb-10 text-xs whitespace-pre-wrap">By making a
                 payment,

@@ -66,8 +66,6 @@ button:hover {
 button:disabled {
     cursor: default;
     background: linear-gradient(90deg, darkgray 0%, dimgrey 100%);
-
-
 }
 /* spinner/processing state, errors */
 .spinner,
