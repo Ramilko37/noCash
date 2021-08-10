@@ -15,7 +15,7 @@ const RadioButton: React.FC<IProps> = (iProps:IProps) => {
                 />
                 <label htmlFor={iProps.id} className="flex items-center cursor-pointer text-sm">
                     <span className="w-4 h-4 inline-block mr-1 rounded-full radio-btn-border"></span>
-                    <p className="w-5/6 md:w-96 ml-3.5 md:pt-3 text-left">
+                    <p className="w-5/6 md:w-96 ml-3.5 pt-6 md:pt-3 text-left">
                         {iProps.content}
                     </p></label>
             </div>)
