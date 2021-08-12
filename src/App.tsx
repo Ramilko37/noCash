@@ -14,19 +14,27 @@ interface IProps {
 
 function App() {
 
-    const [checked, setChecked] = useState(false);
+    let [checked, setChecked] = useState(false);
     let [amount, setAmount] = React.useState(5);
     let [customer, setCustomer] = React.useState({name: "", place: "", imageUrl: "", uuid: ""});
 
+
     const handleChecked = () => {
+
         let oldAmount = amount;
+        console.log(checked)
+        setChecked(true)
         if (checked) {
-            setChecked(!checked);
             handleAmount(amount + (amount * 0.05));
-        } else if (!checked) {
-            handleAmount(oldAmount);
-            setChecked(checked)
         }
+        if (!checked)
+        {
+            console.log(checked)
+           setAmount(oldAmount)
+        }
+
+
+
     }
 
     const handleAmount = (a: number) => {
@@ -36,6 +44,8 @@ function App() {
     const handleCustomer = (customer: IProps) => {
         setCustomer(customer)
     }
+
+
 
     return (
         <div className="h-auto w-screen pb-10">

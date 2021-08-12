@@ -75,9 +75,9 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
             }
             <div className="w-10/12 h-auto flex mx-auto text-white justify-center text-center">
 
-                        {/*<Checkbox checked={checked} handleChecked={handleChecked}/>*/}
-                    <RadioButton id={'7'} content={`I want to cover transaction costs (5% of the tip amount) so that
-                                  the employee receives the full amount`}/>
+                {/*<Checkbox checked={checked} handleChecked={handleChecked}/>*/}
+                <RadioButton id={'7'} content={`I want to cover transaction costs (5% of the tip amount) so that
+                                  the employee receives the full amount`} handleChecked={handleChecked}/>
 
             </div>
             <div className="w-72 flex-col sm:flex-row mx-auto lg:w-4/5 lg:justify-center lg:flex mt-4">
@@ -95,4 +95,3 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
 }
 
 export default Tip
-

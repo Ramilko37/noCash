@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import './radiobuttons.css';
 interface IProps {
     handleChecked: () => void;
-    checked: boolean
+    checked: boolean,
+    amount: number
 }
 
-const Checkbox: React.FC<IProps> = ({handleChecked, checked}) => {
+const Checkbox: React.FC<IProps> = ({handleChecked, checked, amount}) => {
 
     return(
         <div className="flex mb-4">

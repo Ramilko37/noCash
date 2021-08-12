@@ -16,7 +16,6 @@ const customStyles = {
     option: () => ({
         borderBottom: '0px',
         color: 'white',
-
     }),
     control: () => ({
         width: 100,
@@ -24,7 +23,6 @@ const customStyles = {
         color: 'white',
         paddingRight: 10,
         background: 'transparent',
-
     }),
     menu: () => ({
         width: 100,
@@ -34,12 +32,14 @@ const customStyles = {
         background: 'transparent',
         zIndex: 100,
         marginRight: 10,
+
     }),
     singleValue: () => {
         const opacity = 0.5;
         const transition = 'opacity 300ms';
         const background = 'transparent';
         const color = 'white';
+
         return {opacity, transition, background};
     }
 }
@@ -47,14 +47,14 @@ const customStyles = {
 
 const Header: React.FC<IProps> = ({handleLanguage}) =>
     <div className="flex justify-between p-4 sm:w-10/12
-            mx-auto sm:pb-0">
+            mx-auto sm:pb-0 relative">
         <div className="justify-self-center place-content-center">
             <img src={logo} alt="NoCash"/>
         </div>
         <Fragment>
 
             <Select
-                className="z-100 w-20 mr-10"
+                className="z-100 w-20 mr-10 absolute right-100"
                 classNamePrefix="select"
                 styles={customStyles}
                 defaultValue={languages[1]}

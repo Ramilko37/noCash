@@ -3,15 +3,17 @@ import './radiobuttons.css';
 interface IProps {
     id: string,
     content: string
-    handleChange?: () => boolean
+    handleChecked?: () => void
 }
 
 const RadioButton: React.FC<IProps> = (iProps:IProps) => {
 
     if (iProps.id === '7') {
+
         return(
             <div className="flex items-center">
-                <input id={iProps.id} type="checkbox" name="radio" className="hidden"
+                <input id={iProps.id} type="checkbox" name="radio" className="hidden" onClick={
+                    () => iProps.handleChecked ? iProps.handleChecked() : null}
                 />
                 <label htmlFor={iProps.id} className="flex items-center cursor-pointer text-sm">
                     <span className="w-4 h-4 inline-block mr-1 rounded-full radio-btn-border"></span>
