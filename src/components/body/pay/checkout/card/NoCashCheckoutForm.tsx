@@ -118,7 +118,9 @@ const NoCashCheckoutForm: React.FC<IProps> = ({amount}) =>  {
                 >
             <span id="button-text" >
               {processing ? (
-                  <div className="spinner" id="spinner"/>
+                  <div className="spinner" id="spinner">
+
+                  </div>
               ) : (
                   "To pay"
               )}
