@@ -27,12 +27,16 @@ const TipInput: React.FC<IProps> = ({amount, handleAmount}) => {
                  p-3 bg-transparent
                  border-b-2 text-white font-sans text-md sm:text-2xl pt-1 border-l-0
                   border-t-0 border-r-0 rounded-none focus-within:ring-0 input-appearance "/>
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
-             onClick={() => handleAmount(0)}
-        >
-            <rect x="1.41406" width="23" height="2" rx="1" transform="rotate(45 1.41406 0)" fill="white"/>
-            <rect y="16.2637" width="23" height="2" rx="1" transform="rotate(-45 0 16.2637)" fill="white"/>
-        </svg>
+
+        <div className='pt-2 ml-2'>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 onClick={() => handleAmount(0)}
+            >
+                <rect x="1.41406" width="23" height="2" rx="1" transform="rotate(45 1.41406 0)" fill="white"/>
+                <rect y="16.2637" width="23" height="2" rx="1" transform="rotate(-45 0 16.2637)" fill="white"/>
+            </svg>
+        </div>
+
 
     </div>
     )
