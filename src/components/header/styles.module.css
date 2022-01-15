@@ -1,0 +1,61 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 375px;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.languageWrapper {
+    display: flex;
+    order: revert;
+}
+
+
+.buttonStyle {
+    width: 50px;
+    height: 30px;
+    color: inherit;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    padding: 0 0 0 10px;
+    font: inherit;
+    cursor: pointer;
+
+
+    right: 9%;
+
+    outline: none;
+}
+
+.language {
+    font-size: 20px;
+    order: 0;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+    .header {
+        width: 84%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .header {
+        width: 72%;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .header {
+        width: 42%;
+    }
+}
+

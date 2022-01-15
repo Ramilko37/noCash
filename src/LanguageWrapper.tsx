@@ -15,12 +15,22 @@ const LanguageWrapper: React.FC = () => {
     let [language, setLanguage] = React.useState(locale);
 
     const handleLanguage = (language: string) => {
-        setLanguage(language)
+        setLanguage(language);
+    }
+
+    console.log(locale);
+
+    const toggleLanguage = () => {
+        if (locale === 'en') {
+            setLanguage(!language);
+            console.log(locale)
+        }
+        console.log(language)
     }
 
     return (
         <I18n locale={locale} phrases={phrases[language]}>
-            <Header handleLanguage={handleLanguage}/>
+            <Header handleLanguage={handleLanguage} toggleLanguage={toggleLanguage}/>
             <App/>
         </I18n>
     )
