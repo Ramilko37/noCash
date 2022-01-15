@@ -45,8 +45,6 @@ function App() {
         setCustomer(customer)
     }
 
-
-
     return (
         <div className="h-auto w-screen pb-10">
             <Route path="/customers/" exact>

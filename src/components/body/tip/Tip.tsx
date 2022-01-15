@@ -48,7 +48,6 @@ const Tip: React.FC<IProps> = ({amount, handleAmount, uuid, handleChecked, check
         bg-gray-700
         -mt-10
         lg:mt-0
-
         ">
 
             <div className="mb-6 max-w-max md:w-3/4 flex flex-col justify-center mx-auto">
